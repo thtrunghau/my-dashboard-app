@@ -1,13 +1,27 @@
 :root {
+  /* Base theme */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Dashboard theme: Light mode */
+  --dashboard-bg: #f5f6fa;
+  --dashboard-text: #333333;
+  --dashboard-border: #e6e8ef;
+  --dashboard-card-bg: #ffffff;
+  --dashboard-primary: #1677ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html[data-theme="dark"] {
+  /* Base theme */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Dashboard theme: Dark mode */
+  --dashboard-bg: #1b2431;
+  --dashboard-text: #ffffff;
+  --dashboard-border: #2d3747;
+  --dashboard-card-bg: #242e3c;
+  --dashboard-primary: #1677ff;
 }
 
 html,

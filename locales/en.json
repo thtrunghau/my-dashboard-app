@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "calendar": "Calendar",
+    "contacts": "Contacts",
+    "favorites": "Favorites",
+    "inbox": "Inbox",
+    "invoice": "Invoice",
+    "orderList": "Order List",
+    "pricing": "Pricing",
+    "products": "Products",
+    "productStock": "Product Stock",
+    "team": "Team",
+    "todoList": "Todo List",
+    "uiElements": "UI Elements",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "common": {
+    "search": "Search...",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "english": "English",
+    "vietnamese": "Vietnamese"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In"
+  },
+  "dashboard": {
+    "welcome": "Welcome to Dashboard",
+    "overview": "Overview",
+    "statistics": "Statistics",
+    "recentActivity": "Recent Activity"
+  },
+  "themePreview": {
+    "title": "Dashboard Theme Preview",
+    "currentTheme": "Current Theme",
+    "componentSamples": "Component Samples",
+    "cardSample": "Card Sample",
+    "cardContent": "This is a sample card to demonstrate the theme's appearance. You can see how text, backgrounds, and borders appear in the current theme.",
+    "bgSample": "This area demonstrates the main dashboard background color.",
+    "inboxTypeLabels": "Inbox Type Labels",
+    "inboxTypePreview": "Inbox Type Label Preview",
+    "orderStatusLabels": "Order Status Labels",
+    "orderStatusPreview": "Order Status Label Preview",
+    "labelsIndividual": "Individual Labels",
+    "labelsInContext": "Labels In Context"
+  },
+  "inbox": {
+    "type": {
+      "primary": "Primary",
+      "work": "Work",
+      "friends": "Friends",
+      "social": "Social"
+    }
+  },
+  "order": {
+    "status": {
+      "completed": "Completed",
+      "processing": "Processing",
+      "rejected": "Rejected",
+      "holdOn": "Hold On",
+      "inTransit": "In Transit"
+    }
+  },
+  "productCard": {
+    "edit": "Edit",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites"
+  }
+}

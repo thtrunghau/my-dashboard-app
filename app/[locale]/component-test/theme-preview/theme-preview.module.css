@@ -1,0 +1,45 @@
+.container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.colorGrid {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.colorSwatch {
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 1px solid var(--dashboard-border);
+}
+
+.colorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sampleCard {
+  height: 100%;
+}
+
+.bgSample {
+  height: 100%;
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid var(--dashboard-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

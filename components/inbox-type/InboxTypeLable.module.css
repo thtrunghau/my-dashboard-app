@@ -1,0 +1,58 @@
+/* Base label styles */
+.label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+/* Light theme colors */
+.light.primary {
+  background-color: #ccf0eb;
+  color: #00b69b;
+}
+
+.light.work {
+  background-color: #ffebdd;
+  color: #fda060;
+}
+
+.light.friends {
+  background-color: #f6ddff;
+  color: #d456fd;
+}
+
+.light.social {
+  background-color: #dee8ff;
+  color: #5a8cff;
+}
+
+/* Dark theme colors */
+.dark.primary {
+  background-color: #00b69b;
+  color: #ffffff;
+}
+
+.dark.work {
+  background-color: #fd9a56;
+  color: #ffffff;
+}
+
+.dark.friends {
+  background-color: #7d3a89;
+  color: #ffffff;
+}
+
+.dark.social {
+  background-color: #3d369f;
+  color: #ffffff;
+}
+
+/* Hover effects - optional subtle enhancement */
+.label:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

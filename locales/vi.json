@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "dashboard": "Bảng điều khiển",
+    "calendar": "Lịch",
+    "contacts": "Liên hệ",
+    "favorites": "Yêu thích",
+    "inbox": "Hộp thư",
+    "invoice": "Hóa đơn",
+    "orderList": "Danh sách đơn hàng",
+    "pricing": "Bảng giá",
+    "products": "Sản phẩm",
+    "productStock": "Tồn kho sản phẩm",
+    "team": "Nhóm",
+    "todoList": "Danh sách việc cần làm",
+    "uiElements": "Thành phần UI",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất"
+  },
+  "common": {
+    "search": "Tìm kiếm...",
+    "notifications": "Thông báo",
+    "profile": "Hồ sơ",
+    "darkMode": "Chế độ tối",
+    "lightMode": "Chế độ sáng",
+    "language": "Ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "rememberMe": "Ghi nhớ đăng nhập",
+    "forgotPassword": "Quên mật khẩu?",
+    "signIn": "Đăng nhập"
+  },
+  "dashboard": {
+    "welcome": "Chào mừng đến với Bảng điều khiển",
+    "overview": "Tổng quan",
+    "statistics": "Thống kê",
+    "recentActivity": "Hoạt động gần đây"
+  },
+  "themePreview": {
+    "title": "Xem Trước Giao Diện",
+    "currentTheme": "Giao Diện Hiện Tại",
+    "componentSamples": "Mẫu Thành Phần",
+    "cardSample": "Mẫu Thẻ",
+    "cardContent": "Đây là thẻ mẫu để minh họa giao diện hiện tại. Bạn có thể thấy cách văn bản, nền và đường viền xuất hiện trong giao diện hiện tại.",
+    "bgSample": "Khu vực này minh họa màu nền chính của bảng điều khiển.",
+    "inboxTypeLabels": "Nhãn Loại Hộp Thư",
+    "inboxTypePreview": "Xem Trước Nhãn Loại Hộp Thư",
+    "orderStatusLabels": "Nhãn Trạng Thái Đơn Hàng",
+    "orderStatusPreview": "Xem Trước Nhãn Trạng Thái Đơn Hàng",
+    "labelsIndividual": "Nhãn Riêng Lẻ",
+    "labelsInContext": "Nhãn Trong Ngữ Cảnh"
+  },
+  "inbox": {
+    "type": {
+      "primary": "Chính",
+      "work": "Công việc",
+      "friends": "Bạn bè",
+      "social": "Xã hội"
+    }
+  },
+  "order": {
+    "status": {
+      "completed": "Hoàn thành",
+      "processing": "Đang xử lý",
+      "rejected": "Từ chối",
+      "holdOn": "Tạm dừng",
+      "inTransit": "Đang vận chuyển"
+    }
+  },
+  "productCard": {
+    "edit": "Chỉnh sửa",
+    "addToFavorites": "Thêm vào yêu thích",
+    "removeFromFavorites": "Bỏ khỏi yêu thích"
+  }
+}

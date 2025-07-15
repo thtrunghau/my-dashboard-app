@@ -1,0 +1,184 @@
+/* Base card styles */
+.card {
+  background: var(--dashboard-card-bg, #fff);
+  border-radius: 14px; /* Figma: 14px */
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px 18px 18px 18px; /* Figma: 20px top, 18px sides/bottom */
+  width: 232px; /* Figma: 232px */
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+}
+.card:focus-visible {
+  outline: 2px solid #4880ff;
+  outline-offset: 2px;
+}
+
+.light {
+  background: #fff;
+  border: none;
+}
+.dark {
+  background: #273142;
+  border: 1px solid #313d4f;
+}
+
+/* Image wrapper styles */
+.imageWrapper {
+  width: 168px; /* Figma: 168px */
+  height: 168px;
+  border-radius: 14px; /* Figma: 14px */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px; /* Figma: 16px */
+  background: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7ef;
+}
+.dark .imageWrapper {
+  border: 1px solid #313d4f;
+}
+
+/* Favorite button styles */
+.favoriteBtn {
+  position: absolute;
+  top: 12px; /* Figma: 12px */
+  right: 12px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1.5px solid #e5e7ef;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.dark .favoriteBtn {
+  border: 1.5px solid #313d4f;
+}
+.favoriteBtn:hover {
+  background: #f0f6ff;
+  box-shadow: 0px 2px 8px 0px rgba(249, 60, 101, 0.1); /* Figma: subtle pink shadow */
+}
+.favoriteBtn:focus-visible {
+  outline: 2px solid #f93c65;
+  outline-offset: 2px;
+}
+
+/* Edit button styles */
+.editBtn {
+  width: 100%;
+  background: #e2eaf8;
+  color: #202224;
+  border: none;
+  border-radius: 12px; /* Figma: 12px */
+  padding: 10px 0;
+  font-size: 14px; /* Figma: 14px */
+  font-weight: 700; /* Figma: 700 */
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  box-shadow: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: -0.01em; /* Figma: -0.01em */
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0px 2px 8px 0px rgba(72, 128, 255, 0.08); /* Figma: subtle blue shadow */
+  outline: none;
+}
+.editBtn:focus-visible {
+  outline: 2px solid #4880ff;
+  outline-offset: 2px;
+}
+.editBtn:hover {
+  background: #d6e6fa;
+}
+.dark .editBtn {
+  background: #4b5668;
+  color: #fdfdfd;
+}
+.dark .editBtn:hover {
+  background: #404b5d;
+}
+
+/* Title styles */
+.title {
+  font-size: 18px; /* Figma: 18px */
+  font-weight: 700; /* Figma: 700 */
+  margin-bottom: 6px; /* Figma: 6px */
+  color: #202224;
+  letter-spacing: -0.01em;
+  line-height: 1.22;
+  font-family: "Nunito Sans", sans-serif;
+}
+.dark .title {
+  color: #fff;
+}
+
+/* Price styles */
+.price {
+  font-size: 16px; /* Figma: 16px */
+  font-weight: 700;
+  color: #4880ff;
+  margin-top: 2px;
+  margin-bottom: 0;
+  letter-spacing: -0.01em;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Rating styles */
+.rating {
+  margin: 6px 0 8px 0; /* Figma: 6px top, 8px bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.star {
+  font-size: 16px; /* Figma: 16px */
+  transition: color 0.2s;
+  filter: drop-shadow(0 1px 2px rgba(255, 149, 0, 0.1));
+}
+
+.filled {
+  color: #ff9500;
+  opacity: 1;
+}
+
+.empty {
+  color: #ff9500;
+  opacity: 0.2;
+}
+.dark .empty {
+  color: #3f4a5c;
+  opacity: 1;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 6px 12px 6px;
+  }
+  .imageWrapper {
+    width: 120px;
+    height: 120px;
+  }
+}

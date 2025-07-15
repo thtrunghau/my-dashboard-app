@@ -1,0 +1,1 @@
+//main inbox page, show list of messages

@@ -1,0 +1,15 @@
+.languageToggle {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.languageDropdown {
+  min-width: 120px;
+}
+
+.icon {
+  margin-right: 8px;
+}

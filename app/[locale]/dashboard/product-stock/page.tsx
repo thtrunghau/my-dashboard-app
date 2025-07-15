@@ -1,0 +1,1 @@
+//show stoked products

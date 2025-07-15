@@ -1,0 +1,62 @@
+/* Base label styles */
+.label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+/* Light theme colors */
+.light.completed {
+  background-color: #ccf0eb;
+  color: #00b69b;
+}
+
+.light.processing {
+  background-color: #e0d4fc;
+  color: #6226ef;
+}
+
+.light.rejected {
+  background-color: #fcd7d4;
+  color: #ef3826;
+}
+
+.light.holdOn {
+  background-color: #ffeddd;
+  color: #ffa756;
+}
+
+.light.inTransit {
+  background-color: #f1d4ff;
+  color: #ba29ff;
+}
+
+/* Dark theme colors */
+.dark.completed {
+  background-color: #00b69b;
+  color: #ffffff;
+}
+
+.dark.processing {
+  background-color: #6226ef;
+  color: #ffffff;
+}
+
+.dark.rejected {
+  background-color: #ef3826;
+  color: #ffffff;
+}
+
+.dark.holdOn {
+  background-color: #ffa756;
+  color: #ffffff;
+}
+
+.dark.inTransit {
+  background-color: #ba29ff;
+  color: #ffffff;
+}
