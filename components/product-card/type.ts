@@ -2,12 +2,14 @@ export interface ProductCardProps {
   id: string;
   name: string;
   price: number;
-  image: string;
+  image: string | string[]; // Support for multiple images
   rating: number; // 0-5, can be fractional
   ratingCount?: number;
   isFavorite?: boolean;
   onEdit?: (id: string) => void;
   onToggleFavorite?: (id: string, isFavorite: boolean) => void;
+  editProduct?: (id: string) => void;
+  onImageChange?: (imageIndex: number) => void;
   className?: string;
   style?: React.CSSProperties;
 }

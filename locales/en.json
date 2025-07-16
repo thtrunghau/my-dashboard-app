@@ -16,6 +16,41 @@
     "settings": "Settings",
     "logout": "Logout"
   },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "product": "Product",
+    "favourites": "Favourites",
+    "orderList": "Order List",
+    "productStock": "Product Stock",
+    "inbox": "Inbox",
+    "pricing": "Pricing",
+    "calendar": "Calendar",
+    "todoList": "To-Do List",
+    "contact": "Contact",
+    "invoice": "Invoice",
+    "uiElements": "UI Elements",
+    "team": "Team",
+    "settings": "Settings",
+    "logout": "Logout",
+    "tooltip": {
+      "dashboard": "Go to Dashboard",
+      "product": "View Products",
+      "favourites": "View Favourites",
+      "orderList": "View Order List",
+      "productStock": "Check Product Stock",
+      "inbox": "Open Inbox",
+      "pricing": "View Pricing",
+      "calendar": "Open Calendar",
+      "todoList": "View To-Do List",
+      "contact": "View Contacts",
+      "invoice": "View Invoices",
+      "uiElements": "View UI Elements",
+      "team": "View Team",
+      "settings": "Open Settings",
+      "logout": "Logout",
+      "menu": "Toggle Menu"
+    }
+  },
   "common": {
     "search": "Search...",
     "notifications": "Notifications",
@@ -72,8 +107,11 @@
     }
   },
   "productCard": {
-    "edit": "Edit",
+    "edit": "Edit Product",
     "addToFavorites": "Add to favorites",
-    "removeFromFavorites": "Remove from favorites"
+    "removeFromFavorites": "Remove from favorites",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "addToCart": "Add to Cart"
   }
 }

@@ -16,6 +16,41 @@
     "settings": "Cài đặt",
     "logout": "Đăng xuất"
   },
+  "sidebar": {
+    "dashboard": "Bảng điều khiển",
+    "product": "Sản phẩm",
+    "favourites": "Yêu thích",
+    "orderList": "Danh sách đơn hàng",
+    "productStock": "Tồn kho sản phẩm",
+    "inbox": "Hộp thư",
+    "pricing": "Bảng giá",
+    "calendar": "Lịch",
+    "todoList": "Danh sách việc cần làm",
+    "contact": "Liên hệ",
+    "invoice": "Hóa đơn",
+    "uiElements": "Thành phần UI",
+    "team": "Nhóm",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "tooltip": {
+      "dashboard": "Đi tới Bảng điều khiển",
+      "product": "Xem Sản phẩm",
+      "favourites": "Xem Yêu thích",
+      "orderList": "Xem Danh sách đơn hàng",
+      "productStock": "Kiểm tra Tồn kho sản phẩm",
+      "inbox": "Mở Hộp thư",
+      "pricing": "Xem Bảng giá",
+      "calendar": "Mở Lịch",
+      "todoList": "Xem Danh sách việc cần làm",
+      "contact": "Xem Liên hệ",
+      "invoice": "Xem Hóa đơn",
+      "uiElements": "Xem Thành phần UI",
+      "team": "Xem Nhóm",
+      "settings": "Mở Cài đặt",
+      "logout": "Đăng xuất",
+      "menu": "Bật/Tắt Menu"
+    }
+  },
   "common": {
     "search": "Tìm kiếm...",
     "notifications": "Thông báo",
@@ -74,6 +109,8 @@
   "productCard": {
     "edit": "Chỉnh sửa",
     "addToFavorites": "Thêm vào yêu thích",
-    "removeFromFavorites": "Bỏ khỏi yêu thích"
+    "removeFromFavorites": "Bỏ khỏi yêu thích",
+    "previousImage": "Ảnh trước",
+    "nextImage": "Ảnh tiếp theo"
   }
 }

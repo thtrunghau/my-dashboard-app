@@ -1,0 +1,362 @@
+/* CSS Custom Properties for Theme Support */
+:root {
+  /* Light Theme Colors */
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #e6e8ef;
+  --sidebar-text: #333333;
+  --sidebar-text-secondary: #666666;
+  --sidebar-menu-item-bg: transparent;
+  --sidebar-menu-item-bg-hover: #f5f6fa;
+  --sidebar-menu-item-bg-active: #e8f0fe;
+  --sidebar-menu-item-text: #333333;
+  --sidebar-menu-item-text-active: #1677ff;
+  --sidebar-icon-color: #666666;
+  --sidebar-icon-color-active: #1677ff;
+  --sidebar-logo-filter: none;
+}
+
+/* Dark Theme Colors */
+.dark {
+  --sidebar-bg: #1b2431;
+  --sidebar-border: #2d3747;
+  --sidebar-text: #ffffff;
+  --sidebar-text-secondary: #b8c5d1;
+  --sidebar-menu-item-bg: transparent;
+  --sidebar-menu-item-bg-hover: #242e3c;
+  --sidebar-menu-item-bg-active: #2d3747;
+  --sidebar-menu-item-text: #b8c5d1;
+  --sidebar-menu-item-text-active: #4880ff;
+  --sidebar-icon-color: #b8c5d1;
+  --sidebar-icon-color-active: #4880ff;
+  --sidebar-logo-filter: brightness(0) invert(1);
+}
+
+/* Base Sidebar Styles - Updated for icon-only design */
+.sidebar {
+  width: 80px; /* Reduced width for icon-only */
+  height: 100vh;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+/* Menu Icon Section */
+.menuIconSection {
+  padding: 16px;
+  border-bottom: 1px solid var(--sidebar-border);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the menu icon */
+  min-height: 56px;
+}
+
+.menuButton {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: var(--sidebar-menu-item-text);
+}
+
+.menuButton:hover {
+  background: var(--sidebar-menu-item-bg-hover);
+}
+
+.menuButton:focus-visible {
+  outline: 2px solid var(--sidebar-menu-item-text-active);
+  outline-offset: 2px;
+}
+
+.menuButton .menuIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: all 0.2s ease;
+}
+
+/* Navigation */
+.navigation {
+  flex: 1;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuItem {
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu Links - Updated for icon-only design */
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icons */
+  padding: 12px; /* Reduced padding for icon-only */
+  text-decoration: none;
+  color: var(--sidebar-menu-item-text);
+  background: var(--sidebar-menu-item-bg);
+  transition: all 0.2s ease;
+  border-radius: 0;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  min-height: 48px;
+  margin: 0 8px; /* Add horizontal margin */
+  border-radius: 8px; /* Add border radius for better look */
+}
+
+.menuLink:hover {
+  background: var(--sidebar-menu-item-bg-hover);
+  color: var(--sidebar-menu-item-text);
+}
+
+.menuLink.active {
+  background: var(--sidebar-menu-item-bg-active);
+  color: var(--sidebar-menu-item-text-active);
+  position: relative;
+}
+
+.menuLink.active::before {
+  content: "";
+  position: absolute;
+  left: -8px; /* Adjust for margin */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--sidebar-menu-item-text-active);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Icon Container */
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: all 0.2s ease;
+}
+
+/* Hide Menu Label for icon-only design */
+.menuLabel {
+  display: none; /* Hide labels completely */
+}
+
+/* Logout Section */
+.logoutSection {
+  padding: 20px 8px; /* Adjust padding to match menu items */
+  border-top: 1px solid var(--sidebar-border);
+  margin-top: auto;
+}
+
+.logoutLink {
+  color: var(--sidebar-menu-item-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.logoutLink:hover {
+  background: var(--sidebar-menu-item-bg-hover);
+  color: #ef3826; /* Red color for logout hover */
+}
+
+/* Responsive Design - Updated for narrower sidebar */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 70px; /* Even narrower on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    max-width: 280px; /* Full width on mobile with expanded menu */
+  }
+  
+  .menuIconSection {
+    padding: 12px 16px;
+    min-height: 48px;
+    justify-content: flex-start; /* Left align on mobile */
+  }
+  
+  .menuButton {
+    padding: 6px;
+  }
+  
+  .menuButton .menuIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menuLink {
+    padding: 10px 16px;
+    min-height: 44px;
+    font-size: 13px;
+    justify-content: flex-start; /* Left align on mobile */
+    margin: 0; /* Remove margin on mobile */
+    border-radius: 0;
+  }
+  
+  /* Show labels on mobile */
+  .menuLabel {
+    display: block;
+    flex: 1;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 12px;
+  }
+  
+  .iconContainer {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .menuIcon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .logoutSection {
+    padding: 20px 0;
+  }
+  
+  .logoutLink {
+    padding: 10px 16px;
+    justify-content: flex-start;
+    border-radius: 0;
+  }
+}
+
+/* Focus States for Accessibility */
+.menuLink:focus-visible {
+  outline: 2px solid var(--sidebar-menu-item-text-active);
+  outline-offset: -2px;
+}
+
+/* Smooth Scrolling */
+.navigation {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sidebar-border) transparent;
+}
+
+.navigation::-webkit-scrollbar {
+  width: 6px;
+}
+
+.navigation::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.navigation::-webkit-scrollbar-thumb {
+  background: var(--sidebar-border);
+  border-radius: 3px;
+}
+
+.navigation::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-text-secondary);
+}
+
+/* Animation for menu items */
+.menuItem {
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: slideIn 0.3s ease forwards;
+}
+
+.menuItem:nth-child(1) { animation-delay: 0.05s; }
+.menuItem:nth-child(2) { animation-delay: 0.1s; }
+.menuItem:nth-child(3) { animation-delay: 0.15s; }
+.menuItem:nth-child(4) { animation-delay: 0.2s; }
+.menuItem:nth-child(5) { animation-delay: 0.25s; }
+.menuItem:nth-child(6) { animation-delay: 0.3s; }
+.menuItem:nth-child(7) { animation-delay: 0.35s; }
+.menuItem:nth-child(8) { animation-delay: 0.4s; }
+.menuItem:nth-child(9) { animation-delay: 0.45s; }
+.menuItem:nth-child(10) { animation-delay: 0.5s; }
+.menuItem:nth-child(11) { animation-delay: 0.55s; }
+.menuItem:nth-child(12) { animation-delay: 0.6s; }
+.menuItem:nth-child(13) { animation-delay: 0.65s; }
+.menuItem:nth-child(14) { animation-delay: 0.7s; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .menuLink {
+    border: 1px solid transparent;
+  }
+  
+  .menuLink:hover,
+  .menuLink.active {
+    border-color: currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .sidebar,
+  .menuLink,
+  .menuIcon {
+    transition: none;
+  }
+  
+  .menuItem {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
