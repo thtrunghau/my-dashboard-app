@@ -85,41 +85,43 @@ export function useLanguageSync(urlLocale: string) {
   }, [urlLocale, language, setLanguage, lastUrlLocale, isHydrated]);
 
   // Store → URL: When language store changes (for non-user-initiated changes)
-  useEffect(() => {
-    if (
-      !isInitialMount.current &&
-      !syncInProgress.current &&
-      language &&
-      language !== lastUrlLocale &&
-      isHydrated
-    ) {
-      syncInProgress.current = true;
+  // useEffect(() => {
+  //   if (
+  //     !isInitialMount.current &&
+  //     !syncInProgress.current &&
+  //     language &&
+  //     language !== lastUrlLocale &&
+  //     isHydrated
+  //   ) {
+  //     syncInProgress.current = true;
 
-      try {
-        // Update URL without adding to history or scrolling
-        const segments = pathname.split("/");
-        segments[1] = language; // Replace locale segment
-        const newPath = segments.join("/");
+  //     try {
+  //       // Update URL without adding to history or scrolling
+  //       const segments = pathname.split("/");
+  //       segments[1] = language; // Replace locale segment
+  //       const newPath = segments.join("/");
 
-        if (process.env.NODE_ENV === "development") {
-          console.log("Updating URL from language store:", {
-            from: lastUrlLocale,
-            to: language,
-            newPath,
-          });
-        }
+  //       if (process.env.NODE_ENV === "development") {
+  //         console.log("Updating URL from language store:", {
+  //           from: lastUrlLocale,
+  //           to: language,
+  //           newPath,
+  //         });
+  //       }
 
-        router.replace(newPath, { scroll: false });
-        setLastUrlLocale(language);
-      } finally {
-        // Release lock after a delay
-        setTimeout(() => {
-          syncInProgress.current = false;
-        }, 10);
-      }
-    }
-  }, [language, pathname, router, lastUrlLocale, isHydrated]);
+  //       router.replace(newPath, { scroll: false });
+  //       setLastUrlLocale(language);
+  //     } finally {
+  //       // Release lock after a delay
+  //       setTimeout(() => {
+  //         syncInProgress.current = false;
+  //       }, 10);
+  //     }
+  //   }
+  // }, [language, pathname, router, lastUrlLocale, isHydrated]);
 
+
+  
   // Public API for language changes - NOW WITH IMMEDIATE URL UPDATE
   const changeLanguage = (newLanguage: "en" | "vi") => {
     if (newLanguage !== language && isHydrated) {
