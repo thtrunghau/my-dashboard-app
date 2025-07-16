@@ -206,7 +206,7 @@
     width: 60px;
     transform: translateX(-100%);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
@@ -217,22 +217,22 @@
     width: 100%;
     max-width: 280px; /* Full width on mobile with expanded menu */
   }
-  
+
   .menuIconSection {
     padding: 12px 16px;
     min-height: 48px;
     justify-content: flex-start; /* Left align on mobile */
   }
-  
+
   .menuButton {
     padding: 6px;
   }
-  
+
   .menuButton .menuIcon {
     width: 20px;
     height: 20px;
   }
-  
+
   .menuLink {
     padding: 10px 16px;
     min-height: 44px;
@@ -241,7 +241,7 @@
     margin: 0; /* Remove margin on mobile */
     border-radius: 0;
   }
-  
+
   /* Show labels on mobile */
   .menuLabel {
     display: block;
@@ -254,21 +254,21 @@
     text-overflow: ellipsis;
     margin-left: 12px;
   }
-  
+
   .iconContainer {
     width: 18px;
     height: 18px;
   }
-  
+
   .menuIcon {
     width: 18px;
     height: 18px;
   }
-  
+
   .logoutSection {
     padding: 20px 0;
   }
-  
+
   .logoutLink {
     padding: 10px 16px;
     justify-content: flex-start;
@@ -312,20 +312,48 @@
   animation: slideIn 0.3s ease forwards;
 }
 
-.menuItem:nth-child(1) { animation-delay: 0.05s; }
-.menuItem:nth-child(2) { animation-delay: 0.1s; }
-.menuItem:nth-child(3) { animation-delay: 0.15s; }
-.menuItem:nth-child(4) { animation-delay: 0.2s; }
-.menuItem:nth-child(5) { animation-delay: 0.25s; }
-.menuItem:nth-child(6) { animation-delay: 0.3s; }
-.menuItem:nth-child(7) { animation-delay: 0.35s; }
-.menuItem:nth-child(8) { animation-delay: 0.4s; }
-.menuItem:nth-child(9) { animation-delay: 0.45s; }
-.menuItem:nth-child(10) { animation-delay: 0.5s; }
-.menuItem:nth-child(11) { animation-delay: 0.55s; }
-.menuItem:nth-child(12) { animation-delay: 0.6s; }
-.menuItem:nth-child(13) { animation-delay: 0.65s; }
-.menuItem:nth-child(14) { animation-delay: 0.7s; }
+.menuItem:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.menuItem:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menuItem:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.menuItem:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.menuItem:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.menuItem:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.menuItem:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.menuItem:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.menuItem:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.menuItem:nth-child(10) {
+  animation-delay: 0.5s;
+}
+.menuItem:nth-child(11) {
+  animation-delay: 0.55s;
+}
+.menuItem:nth-child(12) {
+  animation-delay: 0.6s;
+}
+.menuItem:nth-child(13) {
+  animation-delay: 0.65s;
+}
+.menuItem:nth-child(14) {
+  animation-delay: 0.7s;
+}
 
 @keyframes slideIn {
   to {
@@ -339,7 +367,7 @@
   .menuLink {
     border: 1px solid transparent;
   }
-  
+
   .menuLink:hover,
   .menuLink.active {
     border-color: currentColor;
@@ -353,7 +381,7 @@
   .menuIcon {
     transition: none;
   }
-  
+
   .menuItem {
     animation: none;
     opacity: 1;

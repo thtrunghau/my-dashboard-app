@@ -1,7 +1,14 @@
 "use client";
 
 import { Card, Space, Typography, Divider, Row, Col, Button } from "antd";
-import { LeftOutlined, RightOutlined, HomeOutlined, MenuOutlined, UserOutlined, SettingOutlined } from "@ant-design/icons";
+import {
+  LeftOutlined,
+  RightOutlined,
+  HomeOutlined,
+  MenuOutlined,
+  UserOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
 import { LanguageToggle } from "@/components/navbar";
 import { ThemeToggle } from "@/components/navbar";
 import { InboxTypeLabel } from "@/components/inbox-type";
@@ -25,16 +32,14 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
     return (
       <div className={styles.container}>
         <div className={styles.header}>
-          <Title level={4}>
-            Dashboard Theme Preview
-          </Title>
+          <Title level={4}>Dashboard Theme Preview</Title>
           <Space>
             <ThemeToggle />
             <LanguageToggle urlLocale={locale} />
           </Space>
         </div>
         <Divider />
-        <div style={{ textAlign: 'center', padding: '20px' }}>
+        <div style={{ textAlign: "center", padding: "20px" }}>
           <Text type="secondary">Loading...</Text>
         </div>
       </div>
@@ -288,7 +293,13 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
           <div>
             <Title level={5}>Direction Navigation Icons</Title>
             <Space size="middle" wrap>
-              <div style={{ padding: "16px", border: "1px solid var(--dashboard-border)", borderRadius: "8px" }}>
+              <div
+                style={{
+                  padding: "16px",
+                  border: "1px solid var(--dashboard-border)",
+                  borderRadius: "8px",
+                }}
+              >
                 <Space>
                   <LeftOutlined style={{ fontSize: 24 }} />
                   <RightOutlined style={{ fontSize: 24 }} />
@@ -296,11 +307,17 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
               </div>
             </Space>
           </div>
-          
+
           <div>
             <Title level={5}>Common UI Navigation Icons</Title>
             <Space size="middle" wrap>
-              <div style={{ padding: "16px", border: "1px solid var(--dashboard-border)", borderRadius: "8px" }}>
+              <div
+                style={{
+                  padding: "16px",
+                  border: "1px solid var(--dashboard-border)",
+                  borderRadius: "8px",
+                }}
+              >
                 <Space>
                   <HomeOutlined style={{ fontSize: 24 }} />
                   <MenuOutlined style={{ fontSize: 24 }} />
@@ -310,27 +327,33 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
               </div>
             </Space>
           </div>
-          
+
           <div>
             <Title level={5}>Interactive Navigation Icons</Title>
             <Space size="middle" wrap>
-              <Button type="primary" icon={<LeftOutlined />}>Previous</Button>
-              <Button type="primary" icon={<RightOutlined />}>Next</Button>
+              <Button type="primary" icon={<LeftOutlined />}>
+                Previous
+              </Button>
+              <Button type="primary" icon={<RightOutlined />}>
+                Next
+              </Button>
               <Button icon={<HomeOutlined />}>Home</Button>
               <Button icon={<SettingOutlined />}>Settings</Button>
             </Space>
           </div>
-          
+
           <div>
             <Title level={5}>Theme-Aware Icons</Title>
             <Space size="middle" wrap>
-              <div style={{ 
-                padding: "16px", 
-                background: "var(--dashboard-card-bg)", 
-                border: "1px solid var(--dashboard-border)", 
-                borderRadius: "8px",
-                color: "var(--dashboard-text)"
-              }}>
+              <div
+                style={{
+                  padding: "16px",
+                  background: "var(--dashboard-card-bg)",
+                  border: "1px solid var(--dashboard-border)",
+                  borderRadius: "8px",
+                  color: "var(--dashboard-text)",
+                }}
+              >
                 <Space>
                   <LeftOutlined style={{ fontSize: 24 }} />
                   <RightOutlined style={{ fontSize: 24 }} />
@@ -349,31 +372,42 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
           <div>
             <Title level={5}>SideBar in Light/Dark Theme</Title>
             <Text type="secondary">
-              The sidebar below demonstrates theme-aware styling, icon states, and navigation functionality.
-              Icons will show active/inactive states based on the current route.
+              The sidebar below demonstrates theme-aware styling, icon states,
+              and navigation functionality. Icons will show active/inactive
+              states based on the current route.
             </Text>
           </div>
-          
-          <div style={{ 
-            display: "flex", 
-            height: "500px", 
-            border: "1px solid var(--dashboard-border)", 
-            borderRadius: "8px",
-            overflow: "hidden",
-            background: "var(--dashboard-bg)"
-          }}>
-            <div style={{ width: "280px", borderRight: "1px solid var(--dashboard-border)" }}>
+
+          <div
+            style={{
+              display: "flex",
+              height: "500px",
+              border: "1px solid var(--dashboard-border)",
+              borderRadius: "8px",
+              overflow: "hidden",
+              background: "var(--dashboard-bg)",
+            }}
+          >
+            <div
+              style={{
+                width: "280px",
+                borderRight: "1px solid var(--dashboard-border)",
+              }}
+            >
               <SideBar locale={locale} />
             </div>
-            <div style={{ 
-              flex: 1, 
-              padding: "24px", 
-              background: "var(--dashboard-card-bg)",
-              color: "var(--dashboard-text)"
-            }}>
+            <div
+              style={{
+                flex: 1,
+                padding: "24px",
+                background: "var(--dashboard-card-bg)",
+                color: "var(--dashboard-text)",
+              }}
+            >
               <Title level={4}>Main Content Area</Title>
               <Text>
-                This area represents the main dashboard content. The sidebar on the left shows:
+                This area represents the main dashboard content. The sidebar on
+                the left shows:
               </Text>
               <ul style={{ marginTop: "16px", color: "var(--dashboard-text)" }}>
                 <li>Theme-aware background and text colors</li>
@@ -404,7 +438,7 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
                 image={[
                   "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
                   "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=400&q=80"
+                  "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=400&q=80",
                 ]}
                 rating={4.5}
                 isFavorite={false}
@@ -417,7 +451,7 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
                 price={149.99}
                 image={[
                   "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80"
+                  "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80",
                 ]}
                 rating={3}
                 isFavorite={false}
@@ -436,7 +470,7 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
                 image={[
                   "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
                   "https://images.unsplash.com/photo-1558537348-c0f8e733989d?auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=400&q=80"
+                  "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=400&q=80",
                 ]}
                 rating={5}
                 isFavorite={true}
@@ -450,7 +484,7 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
                 image={[
                   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
                   "https://images.unsplash.com/photo-1510878933023-e2e2e3942fb0?auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=400&q=80"
+                  "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=400&q=80",
                 ]}
                 rating={2.5}
                 isFavorite={true}

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export type SideBarProps = {
   locale: string;
-}
+};
 
 interface MenuItem {
   id: string;
@@ -30,7 +30,8 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
 
   // Get theme-based icon path
   const getThemeIconPath = (iconName: string) => {
-    const themeFolder = theme === "dark" ? "icon-dark-theme" : "icon-light-them";
+    const themeFolder =
+      theme === "dark" ? "icon-dark-theme" : "icon-light-them";
     return `/icon-sidebar/${themeFolder}/${iconName}`;
   };
 
@@ -173,7 +174,10 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
       <div className={`${styles.sidebar} ${styles[theme]}`}>
         {/* Menu Icon Section */}
         <div className={styles.menuIconSection}>
-          <Tooltip title={t("sidebar.tooltip.menu", "Toggle Menu")} placement="right">
+          <Tooltip
+            title={t("sidebar.tooltip.menu", "Toggle Menu")}
+            placement="right"
+          >
             <button className={styles.menuButton} aria-label="Toggle menu">
               <Image
                 src={getThemeIconPath("menu.svg")}
@@ -193,10 +197,15 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
               const active = isActive(item.href);
               return (
                 <li key={item.id} className={styles.menuItem}>
-                  <Tooltip title={t(`sidebar.tooltip.${item.id}`, item.label)} placement="right">
+                  <Tooltip
+                    title={t(`sidebar.tooltip.${item.id}`, item.label)}
+                    placement="right"
+                  >
                     <Link
                       href={item.href}
-                      className={`${styles.menuLink} ${active ? styles.active : ""}`}
+                      className={`${styles.menuLink} ${
+                        active ? styles.active : ""
+                      }`}
                     >
                       <div className={styles.iconContainer}>
                         <Image
@@ -217,11 +226,19 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
 
         {/* Logout Section */}
         <div className={styles.logoutSection}>
-          <Tooltip title={t("sidebar.tooltip.logout", "Logout")} placement="right">
+          <Tooltip
+            title={t("sidebar.tooltip.logout", "Logout")}
+            placement="right"
+          >
             <button
               onClick={handleLogoutClick}
               className={`${styles.menuLink} ${styles.logoutLink}`}
-              style={{ background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
+              style={{
+                background: "none",
+                border: "none",
+                width: "100%",
+                textAlign: "left",
+              }}
             >
               <div className={styles.iconContainer}>
                 <Image
@@ -247,7 +264,9 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
         cancelText={t("common.cancel", "Cancel")}
         centered
       >
-        <p>{t("sidebar.logoutConfirmation", "Are you sure you want to logout?")}</p>
+        <p>
+          {t("sidebar.logoutConfirmation", "Are you sure you want to logout?")}
+        </p>
       </Modal>
     </>
   );

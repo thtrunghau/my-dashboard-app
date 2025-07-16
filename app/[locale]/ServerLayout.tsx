@@ -1,5 +1,5 @@
-import { use } from 'react';
-import ClientLayout from './ClientLayout';
+import { use } from "react";
+import ClientLayout from "./ClientLayout";
 
 interface LayoutParams {
   locale: string;
@@ -17,10 +17,6 @@ export default function RootLayout({
   // This works now and will continue to work in future Next.js versions
   const unwrappedParams = use(params as Promise<LayoutParams>);
   const locale = unwrappedParams.locale || "en";
-  
-  return (
-    <ClientLayout locale={locale}>
-      {children}
-    </ClientLayout>
-  );
+
+  return <ClientLayout locale={locale}>{children}</ClientLayout>;
 }
