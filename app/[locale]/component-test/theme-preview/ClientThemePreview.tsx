@@ -9,7 +9,7 @@ import {
   UserOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-import { LanguageToggle } from "@/components/navbar";
+import { LanguageToggle, NavBar } from "@/components/navbar";
 import { ThemeToggle } from "@/components/navbar";
 import { InboxTypeLabel } from "@/components/inbox-type";
 import { OrderStatusTypeLabel } from "@/components/order-status";
@@ -77,15 +77,7 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <Title level={4}>
-          {t("themePreview.title", "Dashboard Theme Preview")}
-        </Title>
-        <Space>
-          <ThemeToggle />
-          <LanguageToggle urlLocale={locale} />
-        </Space>
-      </div>
+     <NavBar locale={locale} />
 
       <Divider />
 

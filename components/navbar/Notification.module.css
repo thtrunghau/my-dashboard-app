@@ -1,0 +1,130 @@
+.notificationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.notificationButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .notificationButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.notificationDropdown {
+  width: 320px;
+  max-height: 400px;
+  background: var(--dashboard-card-bg, #ffffff);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 0; /* Ensure no extra padding on dropdown */
+}
+
+.notificationHeader {
+  padding: 16px 20px; /* Increased horizontal padding */
+  border-bottom: 1px solid var(--dashboard-border, #e6e8ef);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dashboard-card-bg, #ffffff);
+}
+
+.notificationList {
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 8px 0; /* Add vertical padding to the list */
+}
+
+.notificationItem {
+  padding: 16px 20px; /* Increased padding for better spacing */
+  border-bottom: 1px solid var(--dashboard-border, #e6e8ef);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+  margin: 0 8px; /* Add horizontal margin */
+  border-radius: 6px; /* Add border radius for better visual */
+}
+
+.notificationItem:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.notificationItem:hover {
+  background-color: var(--dashboard-bg, #f5f6fa);
+}
+
+.notificationItem.unread {
+  background-color: rgba(22, 119, 255, 0.02);
+}
+
+.notificationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Increased gap for better readability */
+  flex: 1;
+  padding-right: 20px; /* Add padding to avoid overlap with unread dot */
+}
+
+.notificationTitle {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500; /* Make title slightly bolder */
+}
+
+.notificationDesc {
+  font-size: 12px;
+  line-height: 1.4; /* Improved line height */
+}
+
+.notificationTime {
+  font-size: 11px;
+  margin-top: 2px;
+  opacity: 0.7; /* Make time more subtle */
+}
+
+.unreadDot {
+  width: 8px; /* Slightly larger dot */
+  height: 8px;
+  background-color: var(--dashboard-primary, #1677ff);
+  border-radius: 50%;
+  position: absolute;
+  right: 20px; /* Adjusted position */
+  top: 20px; /* Fixed position from top */
+}
+
+.notificationFooter {
+  padding: 12px 20px; /* Increased padding */
+  border-top: 1px solid var(--dashboard-border, #e6e8ef);
+  text-align: center;
+  background: var(--dashboard-card-bg, #ffffff);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .notificationDropdown {
+  background: var(--dashboard-card-bg, #242e3c);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .notificationHeader {
+  background: var(--dashboard-card-bg, #242e3c);
+  border-bottom-color: var(--dashboard-border, #2d3747);
+}
+
+[data-theme="dark"] .notificationItem {
+  border-bottom-color: var(--dashboard-border, #2d3747);
+}
+
+[data-theme="dark"] .notificationItem:hover {
+  background-color: var(--dashboard-bg, #1b2431);
+}
+
+[data-theme="dark"] .notificationFooter {
+  background: var(--dashboard-card-bg, #242e3c);
+  border-top-color: var(--dashboard-border, #2d3747);
+}

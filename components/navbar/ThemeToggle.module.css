@@ -6,12 +6,19 @@
   width: 40px;
   border-radius: 50%;
   transition: all 0.3s ease;
+  color: #faad14; /* Golden yellow for sun icon */
 }
 
 .themeToggle:hover {
   background-color: rgba(0, 0, 0, 0.05);
+  color: #fadb14; /* Brighter yellow on hover */
+}
+
+[data-theme="dark"] .themeToggle {
+  color: #722ed1; /* Purple for moon icon in dark theme */
 }
 
 [data-theme="dark"] .themeToggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  color: #9254de; /* Brighter purple on hover */
 }

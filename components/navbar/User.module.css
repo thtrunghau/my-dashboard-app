@@ -1,0 +1,72 @@
+.userButton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.userButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .userButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.userAvatar {
+  background-color: var(--dashboard-primary, #1677ff);
+  flex-shrink: 0;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 8px;
+  min-width: 0;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dashboard-text, #333333);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.userRole {
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--dashboard-text-secondary, #8c8c8c);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .userName {
+  color: var(--dashboard-text, #ffffff);
+}
+
+[data-theme="dark"] .userRole {
+  color: var(--dashboard-text-secondary, #8c8c8c);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .userInfo {
+    display: none;
+  }
+  
+  .userButton {
+    padding: 4px;
+    width: 40px;
+    justify-content: center;
+  }
+}

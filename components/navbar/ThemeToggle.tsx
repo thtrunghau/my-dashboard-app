@@ -2,7 +2,7 @@
 
 import { Button, Tooltip } from "antd";
 import { useThemeStore } from "@/stores/themeStore";
-import { BulbOutlined, BulbFilled } from "@ant-design/icons";
+import { SunFilled, MoonFilled } from "@ant-design/icons";
 import styles from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
@@ -13,7 +13,7 @@ export default function ThemeToggle() {
       <Button
         type="text"
         onClick={toggleTheme}
-        icon={theme === "light" ? <BulbOutlined /> : <BulbFilled />}
+        icon={theme === "light" ? <SunFilled /> : <MoonFilled />}
         className={styles.themeToggle}
         aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
       />
