@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Badge, Dropdown, List, Typography, Space } from "antd";
-import { BellOutlined } from "@ant-design/icons";
+import { BellFilled } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import styles from "./Notification.module.css";
 
@@ -81,7 +81,7 @@ export default function Notification() {
       <Badge count={unreadCount} size="small" offset={[-2, 2]}>
         <Button
           type="text"
-          icon={<BellOutlined />}
+          icon={<BellFilled style={{color:"#4880ff"}}/>}
           className={styles.notificationButton}
           aria-label={t("common.notifications", "Notifications")}
         />
