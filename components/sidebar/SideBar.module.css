@@ -50,7 +50,7 @@
 /* Menu Icon Section */
 .menuIconSection {
   padding: 16px;
-  border-bottom: 1px solid var(--sidebar-border);
+  /* border-bottom: 1px solid var(--sidebar-border); */
   display: flex;
   align-items: center;
   justify-content: center; /* Center the menu icon */
@@ -174,9 +174,7 @@
 
 /* Logout Section */
 .logoutSection {
-  padding: 20px 8px; /* Adjust padding to match menu items */
-  border-top: 1px solid var(--sidebar-border);
-  margin-top: auto;
+  padding: 20px 0px; /* Adjust padding to match menu items */
 }
 
 .logoutLink {
@@ -185,8 +183,10 @@
   align-items: center;
   justify-content: center;
   padding: 12px;
-  border-radius: 8px;
+  border: none;
   transition: all 0.2s ease;
+  margin: auto;
+  background: none;
 }
 
 .logoutLink:hover {
@@ -284,12 +284,14 @@
 
 /* Smooth Scrolling */
 .navigation {
-  scrollbar-width: thin;
-  scrollbar-color: var(--sidebar-border) transparent;
+  scrollbar-width: none;
+  /* scrollbar-color: var(--sidebar-border) transparent; */
+  -ms-overflow-style: none;
 }
 
 .navigation::-webkit-scrollbar {
-  width: 6px;
+  /* width: 6px; */
+  display: none;
 }
 
 .navigation::-webkit-scrollbar-track {

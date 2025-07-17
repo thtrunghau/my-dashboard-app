@@ -233,12 +233,12 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
             <button
               onClick={handleLogoutClick}
               className={`${styles.menuLink} ${styles.logoutLink}`}
-              style={{
-                background: "none",
-                border: "none",
-                width: "100%",
-                textAlign: "left",
-              }}
+              // style={{
+              //   background: "none",
+              //   border: "none",
+              //   width: "100%",
+              //   // textAlign: "left",
+              // }}
             >
               <div className={styles.iconContainer}>
                 <Image
