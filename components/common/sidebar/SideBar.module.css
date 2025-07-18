@@ -17,13 +17,13 @@
 
 /* Dark Theme Colors */
 .dark {
-  --sidebar-bg: #1b2431;
-  --sidebar-border: #2d3747;
+  --sidebar-bg: #273142;
+  --sidebar-border: #2d2731423747;
   --sidebar-text: #ffffff;
   --sidebar-text-secondary: #b8c5d1;
   --sidebar-menu-item-bg: transparent;
-  --sidebar-menu-item-bg-hover: #242e3c;
-  --sidebar-menu-item-bg-active: #2d3747;
+  --sidebar-menu-item-bg-hover: #273142;
+  --sidebar-menu-item-bg-active: #273142;
   --sidebar-menu-item-text: #b8c5d1;
   --sidebar-menu-item-text-active: #4880ff;
   --sidebar-icon-color: #b8c5d1;

@@ -70,10 +70,44 @@
     "signIn": "Sign In"
   },
   "dashboard": {
-    "welcome": "Welcome to Dashboard",
-    "overview": "Overview",
-    "statistics": "Statistics",
-    "recentActivity": "Recent Activity"
+    "dashboard": {
+      "title": "Dashboard",
+      "stats": {
+        "totalUsers": "Total Users",
+        "totalOrders": "Total Orders",
+        "totalSales": "Total Sales",
+        "orderPending": "Order Pending",
+        "fromLastMonth": "from last month"
+      },
+      "salesDetails": {
+        "title": "Sales Details",
+        "totalSales": "Total Sales",
+        "totalOrders": "Total Orders",
+        "filterOptions": {
+          "weekly": "Weekly",
+          "monthly": "Monthly",
+          "yearly": "Yearly"
+        },
+        "chart": {
+          "percentage": "Percentage",
+          "sales": "Sales",
+          "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+          }
+        }
+      }
+    }
   },
   "themePreview": {
     "title": "Dashboard Theme Preview",

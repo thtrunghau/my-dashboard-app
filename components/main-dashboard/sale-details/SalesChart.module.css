@@ -1,0 +1,39 @@
+/* CSS Custom Properties for Theme Support */
+:root {
+  /* Light Theme Colors */
+  --sales-chart-bg: #ffffff;
+  --sales-chart-border: #f0f0f0;
+  --sales-chart-text-primary: #2c3e50;
+  --sales-chart-text-secondary: #718EBF;
+  --sales-chart-line: #4880FF;
+  --sales-chart-grid: rgba(113, 142, 191, 0.1);
+}
+
+/* Dark Theme Colors */
+/* .dark {
+  --sales-chart-bg: #273142;
+  --sales-chart-border: #2d3747;
+  --sales-chart-text-primary: #ffffff;
+  --sales-chart-text-secondary: #e0e0e0;
+  --sales-chart-line: #4880FF;
+  --sales-chart-grid: rgba(255, 255, 255, 0.15);
+} */
+
+html[data-theme="dark"] .chartContainer {
+  --sales-chart-bg: #273142;
+  --sales-chart-border: #2d3747;
+  --sales-chart-text-primary: #ffffff;
+  --sales-chart-text-secondary: #e0e0e0;
+  --sales-chart-line: #4880FF;
+  --sales-chart-grid: rgba(255, 255, 255, 0.15);
+}
+
+.chartContainer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--sales-chart-bg);
+  border-radius: 16px;
+  border: 1px solid var(--sales-chart-border);
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

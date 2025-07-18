@@ -44,7 +44,7 @@ export default function ClientLayout({
         <body>
           <Layout style={{ minHeight: "100vh" }}>
             {/* Header with language and theme toggles */}
-            <Header
+            {/* <Header
               style={{
                 background: theme === "dark" ? "#1b2431" : "#f5f6fa",
                 borderBottom:
@@ -60,7 +60,7 @@ export default function ClientLayout({
                 <LanguageToggle urlLocale={locale} />
                 <ThemeToggle />
               </Space>
-            </Header>
+            </Header> */}
             <Layout>
               <Content style={{ padding: 0 }}>{children}</Content>
             </Layout>

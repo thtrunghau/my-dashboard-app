@@ -1,0 +1,104 @@
+/* CSS Custom Properties for Theme Support */
+:root {
+  /* Light Theme Colors */
+  --sales-detail-bg: #ffffff;
+  --sales-detail-border: #f0f0f0;
+  --sales-detail-text-primary: #2c3e50;
+  --sales-detail-text-secondary: #718EBF;
+  --sales-detail-trend-up: #4caf50;
+  --sales-detail-trend-down: #f44336;
+  --sales-detail-button-bg: #f9fafb;
+  --sales-detail-button-border: #e6e8eb;
+  --sales-detail-button-text: #718EBF;
+}
+
+/* Dark Theme Colors */
+.dark {
+  --sales-detail-bg: #273142;
+  --sales-detail-border: #2d3747;
+  --sales-detail-text-primary: #e9ecef;
+  --sales-detail-text-secondary: #A3AED0;
+  --sales-detail-trend-up: #4caf50;
+  --sales-detail-trend-down: #f44336;
+  --sales-detail-button-bg: #1B2559;
+  --sales-detail-button-border: #2d3747;
+  --sales-detail-button-text: #A3AED0;
+}
+
+.salesDetailCard {
+  background-color: var(--sales-detail-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  margin: 0 !important;
+  color: var(--sales-detail-text-primary) !important;
+  font-weight: 600 !important;
+}
+
+.filterButton {
+  background-color: var(--sales-detail-button-bg) !important;
+  border-color: var(--sales-detail-button-border) !important;
+  color: var(--sales-detail-button-text) !important;
+  border-radius: 8px;
+  height: 36px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statLabel {
+  color: var(--sales-detail-text-secondary) !important;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.statValue {
+  margin: 0 0 4px 0 !important;
+  color: var(--sales-detail-text-primary) !important;
+  font-weight: 600 !important;
+}
+
+.statTrend {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chartWrapper {
+  height: 300px;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cardHeader {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .statsContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

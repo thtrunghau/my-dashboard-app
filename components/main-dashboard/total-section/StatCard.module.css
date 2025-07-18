@@ -1,0 +1,125 @@
+/* CSS Custom Properties for Theme Support */
+:root {
+  /* Light Theme Colors */
+  --stat-card-bg: #ffffff;
+  --stat-card-border: transparent;
+  --stat-card-shadow: rgba(0, 0, 0, 0.05);
+  --stat-card-title: #666666;
+  --stat-card-value: #333333;
+  --stat-card-trend-up: #4caf50;
+  --stat-card-trend-down: #f44336;
+  --stat-card-trend-period: #999999;
+  --stat-card-icon-bg: rgba(72, 128, 255, 0.1);
+  --stat-card-icon-color: #4880ff;
+}
+
+/* Dark Theme Colors */
+.dark {
+  --stat-card-bg: #273142;
+  --stat-card-border: #2d3747;
+  --stat-card-shadow: rgba(0, 0, 0, 0.2);
+  --stat-card-title: #b8c5d1;
+  --stat-card-value: #ffffff;
+  --stat-card-trend-up: #4caf50;
+  --stat-card-trend-down: #f44336;
+  --stat-card-trend-period: #8a97a9;
+  --stat-card-icon-bg: rgba(72, 128, 255, 0.2);
+  --stat-card-icon-color: #4880ff;
+}
+
+/* Base Card Styles */
+.statCard {
+  background: var(--stat-card-bg);
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px var(--stat-card-shadow);
+  border: 1px solid var(--stat-card-border);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+}
+
+.statCardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statTitle {
+  font-size: 14px;
+  color: var(--stat-card-title);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Override Ant Design's Statistic styles */
+.statValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--stat-card-value);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.statValue :global(.ant-statistic-content-value) {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--stat-card-value);
+}
+
+.trendContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.trendUp {
+  color: var(--stat-card-trend-up);
+}
+
+.trendDown {
+  color: var(--stat-card-trend-down);
+}
+
+.trendValue {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.trendPeriod {
+  font-size: 12px;
+  color: var(--stat-card-trend-period);
+  margin-left: 4px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--stat-card-icon-bg);
+  color: var(--stat-card-icon-color);
+  font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .statCardContent {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .iconContainer {
+    margin-bottom: 8px;
+  }
+}

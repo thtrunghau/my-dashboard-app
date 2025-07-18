@@ -32,19 +32,14 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
   // Show fallback content during hydration to prevent mismatch
   if (!isHydrated) {
     return (
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <Title level={4}>Dashboard Theme Preview</Title>
-          <Space>
-            <ThemeToggle />
-            <LanguageToggle urlLocale={locale} />
-          </Space>
-        </div>
-        <Divider />
-        <div style={{ textAlign: "center", padding: "20px" }}>
-          <Text type="secondary">Loading...</Text>
-        </div>
-      </div>
+      // <div className={styles.container}>
+      //   <NavBar locale={locale} />
+      //   <Divider />
+      //   <div style={{ textAlign: "center", padding: "20px" }}>
+      //     <Text type="secondary">Loading...</Text>
+      //   </div>
+      // </div>
+      <NavBar locale={locale} />
     );
   }
 

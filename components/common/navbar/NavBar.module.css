@@ -1,14 +1,46 @@
+/* CSS Custom Properties for Theme Support */
+:root {
+  /* Light Theme Colors */
+  --navbar-bg: #ffffff;
+  --navbar-border: #e6e8ef;
+  --navbar-text: #333333;
+  --navbar-text-secondary: #666666;
+  --navbar-shadow: rgba(0, 0, 0, 0.02);
+}
+
+/* Dark Theme Colors */
+.dark {
+  --navbar-bg: #273142;
+  --navbar-border: #273142;
+  --navbar-text: #ffffff;
+  --navbar-text-secondary: #b8c5d1;
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Base Navbar Styles */
 .navbar {
-  background: var(--dashboard-card-bg, #ffffff);
-  border-bottom: 1px solid var(--dashboard-border, #e6e8ef);
+  background: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
   padding: 0 24px;
   height: 64px;
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: calc(100% - 80px); /* Subtract sidebar width */
+  left: 80px; /* Match sidebar width */
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   transition: all 0.3s ease;
+  box-shadow: 0 1px 3px var(--navbar-shadow);
+}
+
+/* Responsive design - adjust for smaller sidebar */
+@media (max-width: 1024px) {
+  .navbar {
+    width: calc(100% - 70px); /* Match the responsive sidebar width */
+    left: 70px;
+    padding: 0 16px;
+  }
 }
 
 .navbarContent {
@@ -32,17 +64,6 @@
   flex-shrink: 0;
 }
 
-/* Theme variations */
-.light {
-  background: var(--dashboard-card-bg, #ffffff);
-  border-bottom-color: var(--dashboard-border, #e6e8ef);
-}
-
-.dark {
-  background: var(--dashboard-card-bg, #242e3c);
-  border-bottom-color: var(--dashboard-border, #2d3747);
-}
-
 /* Responsive design */
 @media (max-width: 1024px) {
   .navbar {
@@ -54,7 +75,7 @@
   .navbar {
     padding: 0 12px;
   }
-  
+
   .leftSection {
     max-width: 300px;
   }
@@ -64,8 +85,22 @@
   .navbar {
     padding: 0 8px;
   }
-  
+
   .leftSection {
     max-width: 200px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .navbar {
+    border-bottom-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .navbar {
+    transition: none;
   }
 }
