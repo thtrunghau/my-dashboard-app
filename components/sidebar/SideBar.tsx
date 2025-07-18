@@ -5,9 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
-import { Tooltip, Modal } from "antd";
+import { Tooltip } from "antd";
 import styles from "./SideBar.module.css";
 import Image from "next/image";
+import LogoutConfirmModal from "./LogoutConfirmModal";
 
 export type SideBarProps = {
   locale: string;
@@ -34,6 +35,23 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
       theme === "dark" ? "icon-dark-theme" : "icon-light-them";
     return `/icon-sidebar/${themeFolder}/${iconName}`;
   };
+
+  // Handle logout confirmation
+  // const handleLogoutClick = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   setIsLogoutModalVisible(true);
+  // };
+
+  // const handleLogoutConfirm = () => {
+  //   setIsLogoutModalVisible(false);
+  //   // Add your logout logic here
+  //   console.log("User logged out");
+  //   // For example: router.push(`/${locale}/auth/login`);
+  // };
+
+  // const handleLogoutCancel = () => {
+  //   setIsLogoutModalVisible(false);
+  // };
 
   // Define menu items based on available icons and dashboard routes
   const menuItems: MenuItem[] = [
@@ -255,7 +273,7 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
       </div>
 
       {/* Logout Confirmation Modal */}
-      <Modal
+      {/* <Modal
         title={t("sidebar.logout", "Logout")}
         open={isLogoutModalVisible}
         onOk={handleLogoutConfirm}
@@ -267,7 +285,13 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
         <p>
           {t("sidebar.logoutConfirmation", "Are you sure you want to logout?")}
         </p>
-      </Modal>
+      </Modal> */}
+      <LogoutConfirmModal
+        visible={isLogoutModalVisible}
+        onConfirm={handleLogoutConfirm}
+        onCancel={handleLogoutCancel}
+        locale={locale}
+      />
     </>
   );
 };

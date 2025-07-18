@@ -1,0 +1,211 @@
+/* Base Modal Styles */
+.logoutModal {
+  --modal-bg: #ffffff;
+  --modal-border: #e5e7eb;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+  --cancel-bg: #f9fafb;
+  --cancel-hover: #f3f4f6;
+  --cancel-border: #d1d5db;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.logoutModal.dark {
+  --modal-bg: #1f2937;
+  --modal-border: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --warning-color: #fbbf24;
+  --danger-color: #f87171;
+  --danger-hover: #ef4444;
+  --cancel-bg: #374151;
+  --cancel-hover: #4b5563;
+  --cancel-border: #4b5563;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Content */
+.modalContent {
+  padding: 0;
+}
+
+/* Header */
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 24px 20px 24px;
+  border-bottom: 1px solid var(--modal-border);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.iconWrapper.dark {
+  background: rgba(251, 191, 36, 0.15);
+}
+
+.warningIcon {
+  font-size: 24px;
+  color: var(--warning-color);
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* Body */
+.modalBody {
+  padding: 20px 24px 24px 24px;
+}
+
+.confirmationText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+/* Footer */
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 24px 24px 24px;
+  border-top: 1px solid var(--modal-border);
+}
+
+/* Buttons */
+.cancelButton {
+  min-width: 100px;
+  height: 40px;
+  background: var(--cancel-bg) !important;
+  border: 1px solid var(--cancel-border) !important;
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background: var(--cancel-hover) !important;
+  border-color: var(--cancel-border) !important;
+  color: var(--text-primary) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.cancelButton:focus {
+  background: var(--cancel-hover) !important;
+  border-color: var(--cancel-border) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.confirmButton {
+  min-width: 120px;
+  height: 40px;
+  background: var(--danger-color) !important;
+  border: 1px solid var(--danger-color) !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.confirmButton:hover {
+  background: var(--danger-hover) !important;
+  border-color: var(--danger-hover) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.confirmButton:focus {
+  background: var(--danger-hover) !important;
+  border-color: var(--danger-hover) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Modal Override Styles */
+.logoutModal :global(.ant-modal-content) {
+  background: var(--modal-bg);
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px var(--shadow-color), 0 10px 10px -5px var(--shadow-color);
+  overflow: hidden;
+}
+
+.logoutModal :global(.ant-modal-header) {
+  display: none;
+}
+
+.logoutModal :global(.ant-modal-body) {
+  padding: 0;
+}
+
+.logoutModal :global(.ant-modal-footer) {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .modalHeader {
+    padding: 20px 20px 16px 20px;
+  }
+  
+  .modalBody {
+    padding: 16px 20px 20px 20px;
+  }
+  
+  .modalFooter {
+    padding: 16px 20px 20px 20px;
+    flex-direction: column;
+  }
+  
+  .cancelButton,
+  .confirmButton {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .modalFooter {
+    gap: 8px;
+  }
+}
+
+/* Animation */
+.logoutModal :global(.ant-modal-mask) {
+  backdrop-filter: blur(4px);
+}
+
+.logoutModal :global(.ant-modal-wrap) {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
