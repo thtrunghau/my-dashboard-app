@@ -3,8 +3,8 @@ import { ConfigProvider, theme as antdTheme } from "antd";
 import { Layout, Space } from "antd";
 import { useThemeStore } from "@/stores/themeStore";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
-import LanguageToggle from "@/components/navbar/LanguageToggle";
-import ThemeToggle from "@/components/navbar/ThemeToggle";
+import LanguageToggle from "@/components/common/navbar/LanguageToggle";
+import ThemeToggle from "@/components/common/navbar/ThemeToggle";
 import "../globals.css";
 
 const { Content, Header } = Layout;
