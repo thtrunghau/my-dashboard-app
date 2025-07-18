@@ -42,7 +42,7 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
       label: t("sidebar.dashboard", "Dashboard"),
       icon: getThemeIconPath("dashboard.svg"),
       activeIcon: "/icon-sidebar/icon-active/dashboard.svg",
-      href: `/${locale}/dashboard`,
+      href: `/${locale}/dashboard/main-dashboard`,
     },
     {
       id: "product",

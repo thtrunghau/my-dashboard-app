@@ -19,6 +19,8 @@ import { useThemeStore } from "@/stores/themeStore";
 import styles from "./theme-preview.module.css";
 import { useTranslation } from "react-i18next";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
+import ComposeButton from "@/components/buttons/ComposeButton";
+import { ApplyButton } from "@/components/buttons";
 
 const { Title, Text } = Typography;
 
@@ -225,6 +227,8 @@ export default function ClientThemePreviewPage({ locale }: { locale: string }) {
               <OrderStatusTypeLabel status="rejected" />
               <OrderStatusTypeLabel status="holdOn" />
               <OrderStatusTypeLabel status="inTransit" />
+              <ComposeButton variant="primary" iconType="plus"/>
+              <ApplyButton/>
             </Space>
           </div>
 

@@ -1,0 +1,126 @@
+.composeButton {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  padding: 0 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Primary variant */
+.composeButton.primary {
+  background: #5b8dff;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(91, 141, 255, 0.2);
+}
+
+.composeButton.primary:hover {
+  background: #4c7dff;
+  box-shadow: 0 4px 12px rgba(91, 141, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.composeButton.primary:active {
+  background: #3d6eff;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(91, 141, 255, 0.2);
+}
+
+.composeButton.primary:focus {
+  box-shadow: 0 0 0 2px rgba(91, 141, 255, 0.2);
+}
+
+/* Secondary variant */
+.composeButton.secondary {
+  background: #ffffff;
+  border: 1px solid #5b8dff;
+  color: #5b8dff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.composeButton.secondary:hover {
+  background: #5b8dff;
+  border-color: #5b8dff;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(91, 141, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.composeButton.secondary:active {
+  background: #4c7dff;
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(91, 141, 255, 0.1);
+}
+
+.composeButton.secondary:focus {
+  border-color: #5b8dff;
+  box-shadow: 0 0 0 2px rgba(91, 141, 255, 0.2);
+}
+
+/* Disabled state */
+.composeButton:disabled {
+  background: #f5f5f5;
+  color: #bfbfbf;
+  border-color: #d9d9d9;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.composeButton.primary:disabled {
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+}
+
+/* Loading state */
+.composeButton.ant-btn-loading.primary {
+  background: #5b8dff;
+  opacity: 0.8;
+}
+
+/* Size variations */
+.composeButton.ant-btn-sm {
+  height: 32px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+
+.composeButton.ant-btn-lg {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 16px;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .composeButton.primary {
+  background: #5b8dff;
+  box-shadow: 0 2px 8px rgba(91, 141, 255, 0.3);
+}
+
+[data-theme="dark"] .composeButton.primary:hover {
+  background: #6b9dff;
+  box-shadow: 0 4px 12px rgba(91, 141, 255, 0.4);
+}
+
+[data-theme="dark"] .composeButton.secondary {
+  background: var(--dashboard-card-bg, #242e3c);
+  border-color: #5b8dff;
+  color: #5b8dff;
+}
+
+[data-theme="dark"] .composeButton.secondary:hover {
+  background: #5b8dff;
+  border-color: #5b8dff;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .composeButton:disabled {
+  background: #2d3747;
+  color: #8c8c8c;
+  border-color: #2d3747;
+}
