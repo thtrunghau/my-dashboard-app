@@ -169,7 +169,8 @@
           "revenue": "Revenue"
         }
       }
-    }
+    },
+    "products": { "title": "Products" }
   },
   "themePreview": {
     "title": "Dashboard Theme Preview",

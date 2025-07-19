@@ -174,11 +174,7 @@
         }
       }
     },
-    "mainDashboard": {
-      "title": "Bảng điều khiển chính",
-      "summary": "Tóm tắt",
-      "content": "Nội dung bảng điều khiển ở đây"
-    }
+    "products": { "title": "Sản phẩm" }
   },
   "themePreview": {
     "title": "Xem Trước Giao Diện",
