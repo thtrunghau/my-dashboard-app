@@ -1,0 +1,114 @@
+/* Base Card Styles */
+.featuredProductCard {
+  background: var(--customers-card-bg);
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px var(--customers-card-shadow);
+  border: 1px solid var(--customers-card-border);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  color: var(--customers-card-title);
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Image Container Styles */
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 220px;
+}
+
+.productImage {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Navigation Button Styles */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: var(--product-card-nav-arrow-bg);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  transition: all 0.3s ease;
+  color: var(--product-card-nav-icon-color);
+}
+
+.navBtn:hover {
+  background: var(--product-card-nav-arrow-bg-hover);
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+/* Product Details Styles */
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.productName {
+  font-size: 16px;
+  color: var(--customers-card-name);
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.productPrice {
+  font-size: 18px;
+  color: var(--product-card-price-color);
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .imageContainer {
+    height: 180px;
+    padding: 10px 0;
+  }
+  
+  .productName {
+    font-size: 14px;
+  }
+  
+  .productPrice {
+    font-size: 16px;
+  }
+  
+  .navBtn {
+    width: 28px;
+    height: 28px;
+  }
+}

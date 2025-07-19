@@ -110,6 +110,17 @@
   --revenue-button-bg: #f9fafb;
   --revenue-button-border: #e6e8eb;
   --revenue-button-text: #718EBF;
+
+  /* Customers Card - Light Theme */
+  --customers-card-bg: #ffffff;
+  --customers-card-border: transparent;
+  --customers-card-shadow: rgba(0, 0, 0, 0.05);
+  --customers-card-title: #666666;
+  --customers-card-name: #333333;
+  --customers-card-avatar-bg: rgba(72, 128, 255, 0.1);
+  --customers-card-avatar-color: #4880ff;
+  --customers-card-progress-bg: #f5f5f5;
+  --customers-card-progress-color: #4880ff;
 }
 
 html[data-theme="dark"] {
@@ -224,6 +235,17 @@ html[data-theme="dark"] {
   --revenue-button-bg: #242e3c;
   --revenue-button-border: #2d3747;
   --revenue-button-text: #A3AED0;
+
+  /* Customers Card - Dark Theme */
+  --customers-card-bg: #273142;
+  --customers-card-border: #2d3747;
+  --customers-card-shadow: rgba(0, 0, 0, 0.2);
+  --customers-card-title: #b8c5d1;
+  --customers-card-name: #ffffff;
+  --customers-card-avatar-bg: rgba(72, 128, 255, 0.2);
+  --customers-card-avatar-color: #4880ff;
+  --customers-card-progress-bg: #242e3c;
+  --customers-card-progress-color: #4880ff;
 }
 
 html,

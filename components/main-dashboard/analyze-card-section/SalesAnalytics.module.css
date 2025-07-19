@@ -1,0 +1,33 @@
+.salesAnalyticsCard {
+  background-color: var(--customers-card-bg);
+  border: 1px solid var(--customers-card-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  margin: 0 !important;
+  color: var(--customers-card-title) !important;
+  font-weight: 600 !important;
+}
+
+.chartWrapper {
+  width: 100%;
+  height: calc(100% - 40px);
+  min-height: 250px;
+}
+
+@media (max-width: 768px) {
+  .salesAnalyticsCard {
+    margin-bottom: 16px;
+  }
+}

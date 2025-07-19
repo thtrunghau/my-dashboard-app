@@ -157,6 +157,21 @@
             "december": "Tháng 12"
           }
         }
+      },
+      "analysis": {
+        "customers": "Khách hàng",
+        "progress": "Tiến độ",
+        "totalCustomers": "Tổng khách hàng",
+        "activeCustomers": "Hoạt động",
+        "featuredProduct": "Sản phẩm nổi bật",
+        "salesAnalytics": "Phân tích bán hàng"
+      },
+      "salesAnalytics": {
+        "title": "Phân tích bán hàng",
+        "chart": {
+          "sales": "Doanh số",
+          "revenue": "Doanh thu"
+        }
       }
     },
     "mainDashboard": {

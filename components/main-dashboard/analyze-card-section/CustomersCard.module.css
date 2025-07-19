@@ -1,0 +1,146 @@
+/* Base Card Styles */
+.customersCard {
+  background: var(--customers-card-bg);
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px var(--customers-card-shadow);
+  border: 1px solid var(--customers-card-border);
+  /* border:none; */
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  color: var(--customers-card-title);
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Center Progress Styles */
+.centerProgressContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.centerProgress {
+  margin-bottom: 0;
+}
+
+.centerProgress :global(.ant-progress-text) {
+  color: var(--customers-card-name);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Divider */
+.divider {
+  margin: 12px 0;
+  border-color: var(--customers-card-border);
+}
+
+/* Bottom Section Styles */
+.bottomSection {
+  padding: 0 8px;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  text-align: center;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--customers-card-title);
+  margin-bottom: 4px;
+}
+
+.statValue {
+  font-size: 18px;
+  color: var(--customers-card-name);
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .centerProgressContainer {
+    padding: 10px 0;
+  }
+  
+  .statBox {
+    padding: 8px;
+  }
+  
+  .statValue {
+    font-size: 16px;
+  }
+}
+
+.customersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.customerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.customerInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customerAvatar {
+  background-color: var(--customers-card-avatar-bg);
+  color: var(--customers-card-avatar-color);
+}
+
+.customerName {
+  font-size: 14px;
+  color: var(--customers-card-name);
+  font-weight: 500;
+}
+
+.progressContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customerProgress {
+  margin-bottom: 0;
+}
+
+/* Override Ant Design's progress text color */
+.customerProgress :global(.ant-progress-text) {
+  color: var(--customers-card-name);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .customerItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .progressContainer {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 52px; /* Align with the customer name */
+  }
+}

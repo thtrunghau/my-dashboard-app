@@ -1,0 +1,24 @@
+html[data-theme="dark"] .chartContainer {
+  --sales-analytics-chart-bg: #273142;
+  --sales-analytics-chart-border: #2d3747;
+  --sales-analytics-chart-text-primary: #ffffff;
+  --sales-analytics-chart-text-secondary: #e0e0e0;
+  --sales-analytics-chart-grid: rgba(255, 255, 255, 0.15);
+}
+
+.chartContainer {
+  --sales-analytics-chart-bg: #ffffff;
+  --sales-analytics-chart-border: #f0f0f0;
+  --sales-analytics-chart-text-primary: #2c3e50;
+  --sales-analytics-chart-text-secondary: #718EBF;
+  --sales-analytics-chart-grid: rgba(113, 142, 191, 0.1);
+  
+  width: 100%;
+  height: 250px;
+  background-color: var(--sales-analytics-chart-bg);
+  border-radius: 16px;
+  border: 1px solid var(--sales-analytics-chart-border);
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
