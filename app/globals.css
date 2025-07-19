@@ -9,6 +9,59 @@
   --dashboard-border: #e6e8ef;
   --dashboard-card-bg: #ffffff;
   --dashboard-primary: #1677ff;
+  
+  /* Navbar - Light Theme */
+  --navbar-bg: #ffffff;
+  --navbar-border: #e6e8ef;
+  --navbar-text: #333333;
+  --navbar-text-secondary: #666666;
+  --navbar-shadow: rgba(0, 0, 0, 0.02);
+  
+  /* Sidebar - Light Theme */
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #e6e8ef;
+  --sidebar-text: #333333;
+  --sidebar-text-secondary: #666666;
+  --sidebar-menu-item-bg: transparent;
+  --sidebar-menu-item-bg-hover: #f5f6fa;
+  --sidebar-menu-item-bg-active: #e8f0fe;
+  --sidebar-menu-item-text: #333333;
+  --sidebar-menu-item-text-active: #1677ff;
+  --sidebar-icon-color: #666666;
+  --sidebar-icon-color-active: #1677ff;
+  --sidebar-logo-filter: none;
+  
+  /* Deals Details - Light Theme */
+  --deals-detail-bg: #ffffff;
+  --deals-detail-border: #f0f0f0;
+  --deals-detail-text-primary: #2c3e50;
+  --deals-detail-text-secondary: #718EBF;
+  --deals-detail-button-bg: #f9fafb;
+  --deals-detail-button-border: #e6e8eb;
+  --deals-detail-button-text: #718EBF;
+  --deals-detail-table-header-bg: #f9fafb;
+  --deals-detail-table-header-text: #2c3e50;
+  --deals-detail-table-row-hover: #f5f8ff;
+  --deals-detail-table-border: #f0f0f0;
+  
+  /* Sales Chart - Light Theme */
+  --sales-chart-bg: #ffffff;
+  --sales-chart-border: #f0f0f0;
+  --sales-chart-text-primary: #2c3e50;
+  --sales-chart-text-secondary: #718EBF;
+  --sales-chart-line: #4880FF;
+  --sales-chart-grid: rgba(113, 142, 191, 0.1);
+  
+  /* Sales Details - Light Theme */
+  --sales-detail-bg: #ffffff;
+  --sales-detail-border: #f0f0f0;
+  --sales-detail-text-primary: #2c3e50;
+  --sales-detail-text-secondary: #718EBF;
+  --sales-detail-trend-up: #4caf50;
+  --sales-detail-trend-down: #f44336;
+  --sales-detail-button-bg: #f9fafb;
+  --sales-detail-button-border: #e6e8eb;
+  --sales-detail-button-text: #718EBF;
 }
 
 html[data-theme="dark"] {
@@ -22,6 +75,59 @@ html[data-theme="dark"] {
   --dashboard-border: #2d3747;
   --dashboard-card-bg: #242e3c;
   --dashboard-primary: #1677ff;
+  
+  /* Navbar - Dark Theme */
+  --navbar-bg: #273142;
+  --navbar-border: #273142;
+  --navbar-text: #ffffff;
+  --navbar-text-secondary: #b8c5d1;
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Sidebar - Dark Theme */
+  --sidebar-bg: #273142;
+  --sidebar-border: #2d3747; /* Fixed the value from #2d2731423747 which seems incorrect */
+  --sidebar-text: #ffffff;
+  --sidebar-text-secondary: #b8c5d1;
+  --sidebar-menu-item-bg: transparent;
+  --sidebar-menu-item-bg-hover: #273142;
+  --sidebar-menu-item-bg-active: #273142;
+  --sidebar-menu-item-text: #b8c5d1;
+  --sidebar-menu-item-text-active: #4880ff;
+  --sidebar-icon-color: #b8c5d1;
+  --sidebar-icon-color-active: #4880ff;
+  --sidebar-logo-filter: brightness(0) invert(1);
+  
+  /* Deals Details - Dark Theme */
+  --deals-detail-bg: #273142;
+  --deals-detail-border: #2d3747;
+  --deals-detail-text-primary: #e9ecef;
+  --deals-detail-text-secondary: #A3AED0;
+  --deals-detail-button-bg: #242e3c;
+  --deals-detail-button-border: #2d3747;
+  --deals-detail-button-text: #A3AED0;
+  --deals-detail-table-header-bg: #242e3c;
+  --deals-detail-table-header-text: #e9ecef;
+  --deals-detail-table-row-hover: #242e3c;
+  --deals-detail-table-border: #2d3747;
+  
+  /* Sales Chart - Dark Theme */
+  --sales-chart-bg: #273142;
+  --sales-chart-border: #2d3747;
+  --sales-chart-text-primary: #ffffff;
+  --sales-chart-text-secondary: #e0e0e0;
+  --sales-chart-line: #4880FF;
+  --sales-chart-grid: rgba(255, 255, 255, 0.15);
+  
+  /* Sales Details - Dark Theme */
+  --sales-detail-bg: #273142;
+  --sales-detail-border: #2d3747;
+  --sales-detail-text-primary: #e9ecef;
+  --sales-detail-text-secondary: #A3AED0;
+  --sales-detail-trend-up: #4caf50;
+  --sales-detail-trend-down: #f44336;
+  --sales-detail-button-bg: #242e3c;
+  --sales-detail-button-border: #2d3747;
+  --sales-detail-button-text: #A3AED0;
 }
 
 html,

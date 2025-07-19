@@ -1,7 +1,7 @@
 /* CSS Custom Properties for Theme Support */
-:root {
+/* :root { */
   /* Light Theme Colors */
-  --sales-detail-bg: #ffffff;
+  /* --sales-detail-bg: #ffffff;
   --sales-detail-border: #f0f0f0;
   --sales-detail-text-primary: #2c3e50;
   --sales-detail-text-secondary: #718EBF;
@@ -9,12 +9,12 @@
   --sales-detail-trend-down: #f44336;
   --sales-detail-button-bg: #f9fafb;
   --sales-detail-button-border: #e6e8eb;
-  --sales-detail-button-text: #718EBF;
-}
+  --sales-detail-button-text: #718EBF; */
+/* } */
 
 /* Dark Theme Colors */
-.dark {
-  --sales-detail-bg: #273142;
+/* .dark { */
+  /* --sales-detail-bg: #273142;
   --sales-detail-border: #2d3747;
   --sales-detail-text-primary: #e9ecef;
   --sales-detail-text-secondary: #A3AED0;
@@ -22,11 +22,12 @@
   --sales-detail-trend-down: #f44336;
   --sales-detail-button-bg: #1B2559;
   --sales-detail-button-border: #2d3747;
-  --sales-detail-button-text: #A3AED0;
-}
+  --sales-detail-button-text: #A3AED0; */
+/* } */
 
 .salesDetailCard {
   background-color: var(--sales-detail-bg);
+  border: 1px solid var(--sales-detail-border);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 24px;

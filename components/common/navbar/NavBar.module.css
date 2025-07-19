@@ -1,21 +1,21 @@
 /* CSS Custom Properties for Theme Support */
-:root {
+/* :root {
   /* Light Theme Colors */
-  --navbar-bg: #ffffff;
+  /* --navbar-bg: #ffffff;
   --navbar-border: #e6e8ef;
   --navbar-text: #333333;
   --navbar-text-secondary: #666666;
-  --navbar-shadow: rgba(0, 0, 0, 0.02);
-}
+  --navbar-shadow: rgba(0, 0, 0, 0.02); */
+/* } */
 
 /* Dark Theme Colors */
-.dark {
-  --navbar-bg: #273142;
+/* .dark {
+  /* --navbar-bg: #273142;
   --navbar-border: #273142;
   --navbar-text: #ffffff;
   --navbar-text-secondary: #b8c5d1;
-  --navbar-shadow: rgba(0, 0, 0, 0.1);
-}
+  --navbar-shadow: rgba(0, 0, 0, 0.1); */
+/* }   */
 
 /* Base Navbar Styles */
 .navbar {

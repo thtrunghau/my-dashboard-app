@@ -1,7 +1,7 @@
 /* CSS Custom Properties for Theme Support */
-:root {
+/* :root { */
   /* Light Theme Colors */
-  --sidebar-bg: #ffffff;
+  /* --sidebar-bg: #ffffff;
   --sidebar-border: #e6e8ef;
   --sidebar-text: #333333;
   --sidebar-text-secondary: #666666;
@@ -12,12 +12,12 @@
   --sidebar-menu-item-text-active: #1677ff;
   --sidebar-icon-color: #666666;
   --sidebar-icon-color-active: #1677ff;
-  --sidebar-logo-filter: none;
-}
+  --sidebar-logo-filter: none; */
+/* } */
 
 /* Dark Theme Colors */
-.dark {
-  --sidebar-bg: #273142;
+/* .dark { */
+  /* --sidebar-bg: #273142;
   --sidebar-border: #2d2731423747;
   --sidebar-text: #ffffff;
   --sidebar-text-secondary: #b8c5d1;
@@ -28,8 +28,8 @@
   --sidebar-menu-item-text-active: #4880ff;
   --sidebar-icon-color: #b8c5d1;
   --sidebar-icon-color-active: #4880ff;
-  --sidebar-logo-filter: brightness(0) invert(1);
-}
+  --sidebar-logo-filter: brightness(0) invert(1); */
+/* } */
 
 /* Base Sidebar Styles - Updated for icon-only design */
 .sidebar {

@@ -1,13 +1,13 @@
 /* CSS Custom Properties for Theme Support */
-:root {
+/* :root { */
   /* Light Theme Colors */
-  --sales-chart-bg: #ffffff;
+  /* --sales-chart-bg: #ffffff;
   --sales-chart-border: #f0f0f0;
   --sales-chart-text-primary: #2c3e50;
   --sales-chart-text-secondary: #718EBF;
   --sales-chart-line: #4880FF;
-  --sales-chart-grid: rgba(113, 142, 191, 0.1);
-}
+  --sales-chart-grid: rgba(113, 142, 191, 0.1); */
+/* } */
 
 /* Dark Theme Colors */
 /* .dark {
