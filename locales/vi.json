@@ -175,45 +175,59 @@
       }
     },
     "products": { "title": "Sản phẩm" },
-    "favouriteProducts": { "title": "Sản phẩm yêu thích" }
-  },
-  "themePreview": {
-    "title": "Xem Trước Giao Diện",
-    "currentTheme": "Giao Diện Hiện Tại",
-    "componentSamples": "Mẫu Thành Phần",
-    "cardSample": "Mẫu Thẻ",
-    "cardContent": "Đây là thẻ mẫu để minh họa giao diện hiện tại. Bạn có thể thấy cách văn bản, nền và đường viền xuất hiện trong giao diện hiện tại.",
-    "bgSample": "Khu vực này minh họa màu nền chính của bảng điều khiển.",
-    "inboxTypeLabels": "Nhãn Loại Hộp Thư",
-    "inboxTypePreview": "Xem Trước Nhãn Loại Hộp Thư",
-    "orderStatusLabels": "Nhãn Trạng Thái Đơn Hàng",
-    "orderStatusPreview": "Xem Trước Nhãn Trạng Thái Đơn Hàng",
-    "labelsIndividual": "Nhãn Riêng Lẻ",
-    "labelsInContext": "Nhãn Trong Ngữ Cảnh"
-  },
-  "inbox": {
-    "type": {
-      "primary": "Chính",
-      "work": "Công việc",
-      "friends": "Bạn bè",
-      "social": "Xã hội"
+    "favouriteProducts": { "title": "Sản phẩm yêu thích" },
+    "stockedProducts": {
+      "title": "Sản phẩm có sẵn",
+      "searchPlaceholder": "Tìm kiếm tên sản phẩm",
+      "table": {
+        "image": "Hình ảnh",
+        "productName": "Tên sản phẩm",
+        "category": "Danh mục",
+        "price": "Giá",
+        "piece": "Số lượng",
+        "availableColor": "Màu có sẵn",
+        "action": "Hành động",
+        "showing": "Hiển thị {{start}}-{{end}} của {{total}}"
+      }
+    },
+    "themePreview": {
+      "title": "Xem Trước Giao Diện",
+      "currentTheme": "Giao Diện Hiện Tại",
+      "componentSamples": "Mẫu Thành Phần",
+      "cardSample": "Mẫu Thẻ",
+      "cardContent": "Đây là thẻ mẫu để minh họa giao diện hiện tại. Bạn có thể thấy cách văn bản, nền và đường viền xuất hiện trong giao diện hiện tại.",
+      "bgSample": "Khu vực này minh họa màu nền chính của bảng điều khiển.",
+      "inboxTypeLabels": "Nhãn Loại Hộp Thư",
+      "inboxTypePreview": "Xem Trước Nhãn Loại Hộp Thư",
+      "orderStatusLabels": "Nhãn Trạng Thái Đơn Hàng",
+      "orderStatusPreview": "Xem Trước Nhãn Trạng Thái Đơn Hàng",
+      "labelsIndividual": "Nhãn Riêng Lẻ",
+      "labelsInContext": "Nhãn Trong Ngữ Cảnh"
+    },
+    "inbox": {
+      "type": {
+        "primary": "Chính",
+        "work": "Công việc",
+        "friends": "Bạn bè",
+        "social": "Xã hội"
+      }
+    },
+    "order": {
+      "status": {
+        "completed": "Hoàn thành",
+        "processing": "Đang xử lý",
+        "rejected": "Từ chối",
+        "holdOn": "Tạm dừng",
+        "inTransit": "Đang vận chuyển"
+      }
+    },
+    "productCard": {
+      "edit": "Chỉnh sửa",
+      "addToFavorites": "Thêm vào yêu thích",
+      "removeFromFavorites": "Bỏ khỏi yêu thích",
+      "previousImage": "Ảnh trước",
+      "nextImage": "Ảnh tiếp theo",
+      "addToCart": "Thêm vào giỏ hàng"
     }
-  },
-  "order": {
-    "status": {
-      "completed": "Hoàn thành",
-      "processing": "Đang xử lý",
-      "rejected": "Từ chối",
-      "holdOn": "Tạm dừng",
-      "inTransit": "Đang vận chuyển"
-    }
-  },
-  "productCard": {
-    "edit": "Chỉnh sửa",
-    "addToFavorites": "Thêm vào yêu thích",
-    "removeFromFavorites": "Bỏ khỏi yêu thích",
-    "previousImage": "Ảnh trước",
-    "nextImage": "Ảnh tiếp theo",
-    "addToCart": "Thêm vào giỏ hàng"
   }
 }

@@ -1,0 +1,200 @@
+.tableContainer {
+  background: var(--dashboard-card-bg);
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid var(--dashboard-border);
+}
+
+.table {
+  background: transparent;
+  margin-bottom: 24px;
+}
+
+.table .ant-table {
+  background: transparent;
+}
+
+.table .ant-table-thead > tr > th {
+  background: var(--dashboard-card-bg);
+  border-bottom: 1px solid var(--dashboard-border);
+  color: var(--dashboard-text);
+  font-weight: 600;
+  padding: 16px 12px;
+}
+
+.table .ant-table-tbody > tr > td {
+  background: var(--dashboard-card-bg);
+  border-bottom: 1px solid var(--dashboard-border);
+  color: var(--dashboard-text);
+  padding: 16px 12px;
+}
+
+.table .ant-table-tbody > tr:hover > td {
+  background: var(--dashboard-border);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.productName {
+  color: var(--dashboard-text);
+  font-weight: 500;
+}
+
+.categoryName {
+  color: var(--dashboard-text);
+  font-weight: 500;
+}
+
+.price {
+  color: var(--dashboard-text);
+  font-weight: 600;
+}
+
+.piece {
+  color: var(--dashboard-text);
+}
+
+.colorContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.colorCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--dashboard-border);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.colorCircle:hover {
+  transform: scale(1.1);
+}
+
+.moreColors {
+  color: var(--dashboard-text);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.actionButton {
+  color: var(--dashboard-text);
+  border: none;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionButton:hover {
+  background: var(--dashboard-border);
+  color: var(--dashboard-primary);
+}
+
+.deleteButton:hover {
+  color: #ff4d4f;
+}
+
+.pagination {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.pagination .ant-pagination-item {
+  background: var(--dashboard-card-bg);
+  border: 1px solid var(--dashboard-border);
+}
+
+.pagination .ant-pagination-item a {
+  color: var(--dashboard-text);
+}
+
+.pagination .ant-pagination-item-active {
+  background: var(--dashboard-primary);
+  border-color: var(--dashboard-primary);
+}
+
+.pagination .ant-pagination-item-active a {
+  color: white;
+}
+
+.pagination .ant-pagination-prev,
+.pagination .ant-pagination-next {
+  background: var(--dashboard-card-bg);
+  border: 1px solid var(--dashboard-border);
+}
+
+.pagination .ant-pagination-prev a,
+.pagination .ant-pagination-next a {
+  color: var(--dashboard-text);
+}
+
+.showingText {
+  color: var(--dashboard-text);
+  opacity: 0.7;
+}
+
+/* Dark theme specific styles */
+.dark .table .ant-table-thead > tr > th {
+  background: var(--dashboard-card-bg);
+  color: var(--dashboard-text);
+}
+
+.dark .table .ant-table-tbody > tr > td {
+  background: var(--dashboard-card-bg);
+  color: var(--dashboard-text);
+}
+
+.dark .categoryTag {
+  background: var(--dashboard-primary);
+  color: white;
+}
+
+/* Light theme specific styles */
+.light .table .ant-table-thead > tr > th {
+  background: var(--dashboard-card-bg);
+  color: var(--dashboard-text);
+}
+
+.light .table .ant-table-tbody > tr > td {
+  background: var(--dashboard-card-bg);
+  color: var(--dashboard-text);
+}
+
+.light .categoryTag {
+  background: var(--dashboard-primary);
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tableContainer {
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  .table .ant-table-thead > tr > th,
+  .table .ant-table-tbody > tr > td {
+    padding: 12px 8px;
+  }
+
+  .colorContainer {
+    gap: 4px;
+  }
+
+  .colorCircle {
+    width: 16px;
+    height: 16px;
+  }
+}

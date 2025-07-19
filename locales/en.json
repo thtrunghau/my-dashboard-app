@@ -171,7 +171,21 @@
       }
     },
     "products": { "title": "Products" },
-    "favouriteProducts": { "title": "Favourite Products" }
+    "favouriteProducts": { "title": "Favourite Products" },
+    "stockedProducts": {
+      "title": "Product Stock",
+      "searchPlaceholder": "Search product name",
+      "table": {
+        "image": "Image",
+        "productName": "Product Name",
+        "category": "Category",
+        "price": "Price",
+        "piece": "Piece",
+        "availableColor": "Available Color",
+        "action": "Action",
+        "showing": "Showing {{start}}-{{end}} of {{total}}"
+      }
+    }
   },
   "themePreview": {
     "title": "Dashboard Theme Preview",
