@@ -18,7 +18,6 @@ const LogoutConfirmModal: React.FC<LogoutConfirmModalProps> = ({
   visible,
   onConfirm,
   onCancel,
-  locale,
 }) => {
   const { t } = useTranslation();
   const { theme } = useThemeStore();

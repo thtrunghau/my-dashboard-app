@@ -69,7 +69,7 @@ const StatCard: React.FC<StatCardProps> = ({
               >
                 {trendValue}%
               </Text>
-              <Text className={styles.trendPeriod}>{t("dashboard.stats.fromLastMonth")}</Text>
+              <Text className={styles.trendPeriod}>{t("dashboard.dashboard.stats.fromLastMonth")}</Text>
             </div>
           )}
         </div>

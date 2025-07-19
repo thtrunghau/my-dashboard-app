@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Badge, Dropdown, List, Typography, Space } from "antd";
+import { Button, Badge, Dropdown, List, Typography } from "antd";
 import { BellFilled } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import styles from "./Notification.module.css";

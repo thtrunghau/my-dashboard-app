@@ -106,6 +106,31 @@
             "december": "December"
           }
         }
+      },
+      "dealsDetails": {
+        "title": "Deals Details",
+        "columns": {
+          "productName": "Product Name",
+          "location": "Location",
+          "dateTime": "Date-Time",
+          "price": "Price",
+          "amount": "Amount",
+          "status": "Status"
+        },
+        "months": {
+          "january": "January",
+          "february": "February",
+          "march": "March",
+          "april": "April",
+          "may": "May",
+          "june": "June",
+          "july": "July",
+          "august": "August",
+          "september": "September",
+          "october": "October",
+          "november": "November",
+          "december": "December"
+        }
       }
     }
   },

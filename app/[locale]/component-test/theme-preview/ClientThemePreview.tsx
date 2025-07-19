@@ -9,8 +9,8 @@ import {
   UserOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-import { LanguageToggle, NavBar } from "@/components/common/navbar";
-import { ThemeToggle } from "@/components/common/navbar";
+import { NavBar } from "@/components/common/navbar";
+// import { ThemeToggle } from "@/components/common/navbar";
 import { InboxTypeLabel } from "@/components/inbox-type";
 import { OrderStatusTypeLabel } from "@/components/order-status";
 import { ProductCard } from "@/components/product-card";

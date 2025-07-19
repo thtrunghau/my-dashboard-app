@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   isFavorite = false,
   onEdit,
   onToggleFavorite,
-  editProduct,
+  // editProduct,
   onImageChange,
   className,
   style,

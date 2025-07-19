@@ -1,13 +1,13 @@
 "use client";
 import { ConfigProvider, theme as antdTheme } from "antd";
-import { Layout, Space } from "antd";
+import { Layout } from "antd";
 import { useThemeStore } from "@/stores/themeStore";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
-import LanguageToggle from "@/components/common/navbar/LanguageToggle";
-import ThemeToggle from "@/components/common/navbar/ThemeToggle";
+// import LanguageToggle from "@/components/common/navbar/LanguageToggle";
+// import ThemeToggle from "@/components/common/navbar/ThemeToggle";
 import "../globals.css";
 
-const { Content, Header } = Layout;
+const { Content } = Layout;
 
 export default function ClientLayout({
   children,

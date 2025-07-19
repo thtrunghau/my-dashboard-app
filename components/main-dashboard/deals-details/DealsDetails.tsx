@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Card, Typography, Button, Dropdown, Space, Table, Avatar } from "antd";
+import { Card, Typography, Button, Dropdown, Space, Table } from "antd";
 import { DownOutlined, CalendarOutlined } from "@ant-design/icons";
 import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
@@ -136,7 +136,7 @@ const DealsDetail: React.FC<DealsDetailProps> = ({ className, style }) => {
 
   return (
     <Card 
-      className={`${styles.dealsDetailCard} ${className || ""}`} 
+      className={`${styles.dealsDetailCard} ${className || ""} ${styles[theme]}`} 
       style={style} 
       bordered={false}
     >

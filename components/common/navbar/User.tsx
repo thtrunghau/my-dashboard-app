@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Dropdown, Avatar, Space, Typography, Divider } from "antd";
+import { Button, Dropdown, Avatar, Space, Typography } from "antd";
 import { UserOutlined, SettingOutlined, LogoutOutlined, ProfileOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import styles from "./User.module.css";

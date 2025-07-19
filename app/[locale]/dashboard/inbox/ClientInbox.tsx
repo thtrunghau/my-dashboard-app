@@ -10,7 +10,7 @@ const { Title, Text } = Typography;
 export default function ClientInboxPage({ locale }: { locale: string }) {
   const { isHydrated } = useLanguageSync(locale);
   const { t } = useTranslation();
-  const { theme } = useThemeStore();
+  // const { theme } = useThemeStore();
 
   // Show fallback content during hydration to prevent mismatch
   if (!isHydrated) {
