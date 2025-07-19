@@ -170,7 +170,8 @@
         }
       }
     },
-    "products": { "title": "Products" }
+    "products": { "title": "Products" },
+    "favouriteProducts": { "title": "Favourite Products" }
   },
   "themePreview": {
     "title": "Dashboard Theme Preview",

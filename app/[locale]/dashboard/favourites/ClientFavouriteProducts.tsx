@@ -4,12 +4,12 @@ import { Typography, Row, Col } from "antd";
 // import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
-import { Carousel } from "@/components/products-page/carousel-section";
+// import { Carousel } from "@/components/products-page/carousel-section";
 import { ProductCard } from "@/components/product-card";
 
 const { Title, Text } = Typography;
 
-export default function ClientProductsPage({ locale }: { locale: string }) {
+export default function ClientFavouriteProductsPage({ locale }: { locale: string }) {
   const { isHydrated } = useLanguageSync(locale);
   const { t } = useTranslation();
   // const { theme } = useThemeStore();
@@ -34,7 +34,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 4.5,
-      isFavorite: false,
+      isFavorite: true,
     },
     {
       id: "2",
@@ -56,7 +56,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 3.5,
-      isFavorite: false,
+      isFavorite: true,
     },
     {
       id: "4",
@@ -67,7 +67,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1510878933023-e2e2e3942fb0?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 4.2,
-      isFavorite: false,
+      isFavorite: true,
     },
     {
       id: "5",
@@ -89,7 +89,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 4.3,
-      isFavorite: false,
+      isFavorite: true,
     },
     {
       id: "7",
@@ -100,7 +100,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1544006659-f0b21884ce1d?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 3.9,
-      isFavorite: false,
+      isFavorite: true,
     },
     {
       id: "8",
@@ -122,15 +122,15 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
         "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80",
       ],
       rating: 4.1,
-      isFavorite: false,
+      isFavorite: true,
     },
   ];
 
   return (
     <div>
-      <Title level={4}>{t("dashboard.products.title", "Products")}</Title>
+      <Title level={4}>{t("dashboard.favouriteProducts.title", "Favourite Products")}</Title>
 
-      <Carousel />
+      {/* <Carousel /> */}
 
       <div style={{ marginTop: "40px" }}>
         <Row gutter={[24, 24]}>

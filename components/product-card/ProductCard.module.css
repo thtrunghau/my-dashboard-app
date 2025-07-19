@@ -44,7 +44,8 @@
   background: var(--dashboard-card-bg, #fff);
   border-radius: 14px;
   box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
-  width: 361px;
+  width: 100%; /* Changed from fixed 361px to 100% */
+  max-width: 361px; /* Add max-width to prevent cards from getting too large */
   min-height: 497px;
   position: relative;
   overflow: hidden;
