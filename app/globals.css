@@ -92,6 +92,24 @@
   --product-card-nav-arrow-bg-hover: rgba(226, 234, 248, 0.8);
   --product-card-nav-icon-color: #626262;
   --product-card-price-color: #4880ff;
+
+   /* Revenue Chart - Light Theme */
+  --revenue-chart-bg: #ffffff;
+  --revenue-chart-border: #f0f0f0;
+  --revenue-chart-text-primary: #2c3e50;
+  --revenue-chart-text-secondary: #718EBF;
+  --revenue-chart-line-revenue: #4880FF;
+  --revenue-chart-line-profit: #00C48C;
+  --revenue-chart-grid: rgba(113, 142, 191, 0.1);
+
+  /* Revenue - Light Theme */
+  --revenue-bg: #ffffff;
+  --revenue-border: #f0f0f0;
+  --revenue-text-primary: #2c3e50;
+  --revenue-text-secondary: #718EBF;
+  --revenue-button-bg: #f9fafb;
+  --revenue-button-border: #e6e8eb;
+  --revenue-button-text: #718EBF;
 }
 
 html[data-theme="dark"] {
@@ -188,6 +206,24 @@ html[data-theme="dark"] {
   --product-card-nav-arrow-bg-hover: rgba(75, 86, 104, 0.8);
   --product-card-nav-icon-color: #ffffff;
   --product-card-price-color: #4880ff;
+
+  /* Revenue Chart - Dark Theme */
+  --revenue-chart-bg: #273142;
+  --revenue-chart-border: #2d3747;
+  --revenue-chart-text-primary: #ffffff;
+  --revenue-chart-text-secondary: #e0e0e0;
+  --revenue-chart-line-revenue: #4880FF;
+  --revenue-chart-line-profit: #00C48C;
+  --revenue-chart-grid: rgba(255, 255, 255, 0.15);
+  
+  /* Revenue - Dark Theme */
+  --revenue-bg: #273142;
+  --revenue-border: #2d3747;
+  --revenue-text-primary: #e9ecef;
+  --revenue-text-secondary: #A3AED0;
+  --revenue-button-bg: #242e3c;
+  --revenue-button-border: #2d3747;
+  --revenue-button-text: #A3AED0;
 }
 
 html,

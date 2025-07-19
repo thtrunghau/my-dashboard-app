@@ -1,0 +1,19 @@
+html[data-theme="dark"] .chartContainer {
+  --revenue-chart-bg: #273142;
+  --revenue-chart-border: #2d3747;
+  --revenue-chart-text-primary: #ffffff;
+  --revenue-chart-text-secondary: #e0e0e0;
+  --revenue-chart-line-revenue: #4880FF;
+  --revenue-chart-line-profit: #00C48C;
+  --revenue-chart-grid: rgba(255, 255, 255, 0.15);
+}
+
+.chartContainer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--revenue-chart-bg);
+  border-radius: 16px;
+  border: 1px solid var(--revenue-chart-border);
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

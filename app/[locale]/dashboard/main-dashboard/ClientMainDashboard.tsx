@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography, Row, Col } from "antd";
-import { useThemeStore } from "@/stores/themeStore";
+// import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
 import { StatCard } from "@/components/main-dashboard/total-section";
@@ -13,6 +13,7 @@ import {
 } from "@ant-design/icons";
 import { SalesDetails } from "@/components/main-dashboard/sale-details";
 import { DealsDetails } from "@/components/main-dashboard/deals-details";
+import { Revenue } from "@/components/main-dashboard/revenue";
 
 const { Title, Text } = Typography;
 
@@ -83,16 +84,23 @@ export default function ClientMainDashboardPage({
       </Row>
 
       {/* Sales Details Section */}
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
+      <Row gutter={[16, 16]} style={{ marginBottom: 0 }}>
         <Col xs={24} span={24}>
           <SalesDetails />
         </Col>
       </Row>
 
       {/* Deals Details Section */}
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
+      <Row gutter={[16, 16]} style={{ marginBottom: 0 }}>
         <Col xs={24} span={24}>
           <DealsDetails />
+        </Col>
+      </Row>
+
+      {/* Revenue Section */}
+      <Row gutter={[16, 16]} style={{ marginBottom: 0 }}>
+        <Col xs={24} span={24}>
+          <Revenue />
         </Col>
       </Row>
     </div>
