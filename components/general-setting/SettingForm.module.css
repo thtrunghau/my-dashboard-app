@@ -1,0 +1,181 @@
+/* Base Form Styles */
+.settingForm {
+  --form-bg: #ffffff;
+  --form-border: #e6e8ef;
+  --text-primary: #202224;
+  --text-secondary: #718ebf;
+  --primary-color: #4880ff;
+  --primary-hover: #3a6cd5;
+  --cancel-bg: #f5f7fa;
+  --cancel-hover: #e6e8ef;
+  --cancel-border: #e6e8ef;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --upload-bg: #f5f7fa;
+  --upload-border: #e6e8ef;
+  --upload-text: #718ebf;
+}
+
+.settingForm.dark {
+  --form-bg: #1f2937;
+  --form-border: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --primary-color: #4880ff;
+  --primary-hover: #3a6cd5;
+  --cancel-bg: #374151;
+  --cancel-hover: #4b5563;
+  --cancel-border: #4b5563;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --upload-bg: #374151;
+  --upload-border: #4b5563;
+  --upload-text: #d1d5db;
+}
+
+/* Form Content */
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--form-bg);
+  padding: 70px;
+  border-radius: 12px;
+  border: 1px solid var(--form-border);
+  box-shadow: 0 4px 6px -1px var(--shadow-color);
+}
+
+/* Info Section */
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0 100px;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.formItem {
+  flex: 1;
+  min-width: 200px;
+}
+
+.formItem :global(.ant-form-item-label) > label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.textArea {
+  width: 100%;
+}
+
+/* Upload Section */
+.uploadSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.uploadItem {
+  margin-bottom: 0;
+}
+
+.uploadButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+  background-color: var(--upload-bg);
+  border: 1px dashed var(--upload-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.uploadButton:hover {
+  border-color: var(--primary-color);
+}
+
+.uploadText {
+  margin-top: 8px;
+  color: var(--upload-text);
+}
+
+.uploadLabel {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Footer */
+.formFooter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--form-border);
+}
+
+.cancelButton {
+  background: var(--cancel-bg);
+  border: 1px solid var(--cancel-border);
+  color: var(--text-primary);
+}
+
+.cancelButton:hover {
+  background: var(--cancel-hover);
+  border-color: var(--cancel-border);
+}
+
+.submitButton {
+  width: 10%;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.submitButton:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Form field styles */
+.settingForm :global(.ant-input),
+.settingForm :global(.ant-select-selector),
+.settingForm :global(.ant-picker) {
+  border-radius: 8px;
+  border-color: var(--form-border);
+  background-color: var(--form-bg);
+  color: var(--text-primary);
+}
+
+.settingForm :global(.ant-input:hover),
+.settingForm :global(.ant-select-selector:hover),
+.settingForm :global(.ant-picker:hover) {
+  border-color: var(--primary-color);
+}
+
+.settingForm :global(.ant-input:focus),
+.settingForm :global(.ant-select-selector:focus),
+.settingForm :global(.ant-picker-focused) {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(72, 128, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .formItem {
+    min-width: 100%;
+  }
+}

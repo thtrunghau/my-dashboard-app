@@ -244,7 +244,7 @@
         "imageSizeLimit": "Hình ảnh phải nhỏ hơn 2MB!"
       }
     },
-    "team":{
+    "team": {
       "title": "Nhóm",
       "addNewMember": "Thêm thành viên mới",
       "form": {
@@ -271,6 +271,27 @@
         "add": "Thêm",
         "imageOnly": "Bạn chỉ có thể tải lên tệp hình ảnh!",
         "imageSizeLimit": "Hình ảnh phải nhỏ hơn 2MB!"
+      }
+    },
+    "generalSettings": {
+      "title": "Cài đặt chung",
+      "saveSuccess": "Lưu cài đặt thành công",
+      "form": {
+        "siteName": "Tên trang web",
+        "copyright": "Bản quyền",
+        "seoTitle": "Tiêu đề SEO",
+        "seoDescription": "Mô tả SEO",
+        "seoKeywords": "Từ khóa SEO",
+        "siteNamePlaceholder": "Nhập tên trang web",
+        "copyrightPlaceholder": "Nhập thông tin bản quyền",
+        "seoTitlePlaceholder": "Nhập tiêu đề SEO",
+        "seoDescriptionPlaceholder": "Nhập mô tả SEO",
+        "seoKeywordsPlaceholder": "Nhập từ khóa SEO",
+        "siteNameRequired": "Vui lòng nhập tên trang web",
+        "copyrightRequired": "Vui lòng nhập thông tin bản quyền",
+        "seoTitleRequired": "Vui lòng nhập tiêu đề SEO",
+        "seoDescriptionRequired": "Vui lòng nhập mô tả SEO",
+        "seoKeywordsRequired": "Vui lòng nhập từ khóa SEO"
       }
     }
   },

@@ -240,7 +240,7 @@
         "imageSizeLimit": "Image must be smaller than 2MB!"
       }
     },
-    "team":{
+    "team": {
       "title": "Team",
       "addNewMember": "Add New Member",
       "form": {
@@ -267,6 +267,27 @@
         "add": "Add",
         "imageOnly": "You can only upload image files!",
         "imageSizeLimit": "Image must be smaller than 2MB!"
+      }
+    },
+    "generalSettings": {
+      "title": "General Settings",
+      "saveSuccess": "Settings saved successfully",
+      "form": {
+        "siteName": "Site Name",
+        "copyright": "Copyright",
+        "seoTitle": "SEO Title",
+        "seoDescription": "SEO Description",
+        "seoKeywords": "SEO Keywords",
+        "siteNamePlaceholder": "Enter site name",
+        "copyrightPlaceholder": "Enter copyright information",
+        "seoTitlePlaceholder": "Enter SEO title",
+        "seoDescriptionPlaceholder": "Enter SEO description",
+        "seoKeywordsPlaceholder": "Enter SEO keywords",
+        "siteNameRequired": "Please enter site name",
+        "copyrightRequired": "Please enter copyright information",
+        "seoTitleRequired": "Please enter SEO title",
+        "seoDescriptionRequired": "Please enter SEO description",
+        "seoKeywordsRequired": "Please enter SEO keywords"
       }
     }
   },
