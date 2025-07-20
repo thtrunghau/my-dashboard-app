@@ -15,7 +15,7 @@ export default function Loading() {
       height: '100vh',
       backgroundColor: 'rgba(0, 0, 0, 0.05)'
     }}>
-      <Spin indicator={antIcon} tip="Loading dashboard..." />
+      <Spin indicator={antIcon} tip="Loading dashboard..." spinning fullscreen/>
     </div>
   );
 }

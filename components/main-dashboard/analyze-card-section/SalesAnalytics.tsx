@@ -41,7 +41,7 @@ const SalesAnalytics: React.FC<SalesAnalyticsProps> = ({
     <Card
       className={`${styles.salesAnalyticsCard} ${className || ""}`}
       style={style}
-      bordered={false}
+      variant="borderless"
     >
       <div className={styles.cardHeader}>
         <Title level={5} className={styles.cardTitle}>

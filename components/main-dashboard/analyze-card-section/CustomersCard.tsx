@@ -43,14 +43,14 @@ const CustomersCard: React.FC<CustomersCardProps> = ({
     <Card
       className={`${styles.customersCard} ${className || ""}`}
       style={style}
-      bordered={false}
+      variant="borderless"
       title={<Title level={5} className={styles.cardTitle}>{cardTitle}</Title>}
     >
       <div className={styles.centerProgressContainer}>
         <Progress
           type="circle"
           percent={averageProgress}
-          width={120}
+          size={120}
           className={styles.centerProgress}
           format={(percent) => `${percent}%`}
           strokeColor={"var(--customers-card-progress-color)"}

@@ -65,7 +65,7 @@ const Revenue: React.FC<RevenueProps> = ({ className, style }) => {
     <Card 
       className={`${styles.revenueCard} ${className || ""}`} 
       style={style} 
-      bordered={false}
+      variant="borderless"
     >
       <div className={styles.cardHeader}>
         <div>

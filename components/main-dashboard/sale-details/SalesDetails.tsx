@@ -74,7 +74,7 @@ const SalesDetail: React.FC<SalesDetailProps> = ({ className, style }) => {
     <Card 
       className={`${styles.salesDetailCard} ${styles[theme]} ${className || ""}`} 
       style={style} 
-      bordered={false}
+      variant="borderless"
     >
       <div className={styles.cardHeader}>
         <div>

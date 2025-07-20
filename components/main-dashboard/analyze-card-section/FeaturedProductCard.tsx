@@ -53,7 +53,7 @@ const FeaturedProductCard: React.FC<FeaturedProductCardProps> = ({
     <Card
       className={`${styles.featuredProductCard} ${className || ""}`}
       style={style}
-      bordered={false}
+      variant="borderless"
       title={<Title level={5} className={styles.cardTitle}>{cardTitle}</Title>}
     >
       <div className={styles.imageContainer}>

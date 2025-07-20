@@ -44,7 +44,7 @@ const StatCard: React.FC<StatCardProps> = ({
     <Card 
       className={`${styles.statCard} ${styles[theme]} ${className || ""}`}
       style={style}
-      bordered={false}
+      variant="borderless"
     >
       <div className={styles.statCardContent}>
         <div className={styles.statInfo}>

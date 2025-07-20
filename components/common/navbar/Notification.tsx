@@ -73,7 +73,7 @@ export default function Notification() {
 
   return (
     <Dropdown
-      overlay={notificationMenu}
+      popupRender={() => notificationMenu}
       placement="bottomRight"
       trigger={['click']}
       overlayClassName={styles.notificationOverlay}

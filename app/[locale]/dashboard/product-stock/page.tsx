@@ -9,10 +9,10 @@ interface InStockProductParams {
 export default function ProductsPage({
   params,
 }: {
-  params: InStockProductParams | Promise<InStockProductParams>;
+  params:  Promise<InStockProductParams>;
 }) {
   // Properly unwrap params using React.use()
-  const unwrappedParams = use(params as Promise<InStockProductParams>);
+  const unwrappedParams = use(params);
   const locale = unwrappedParams.locale || "en";
 
   // Pass the unwrapped locale to the client component

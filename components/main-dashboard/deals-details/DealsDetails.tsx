@@ -138,7 +138,7 @@ const DealsDetail: React.FC<DealsDetailProps> = ({ className, style }) => {
     <Card 
       className={`${styles.dealsDetailCard} ${className || ""} ${styles[theme]}`} 
       style={style} 
-      bordered={false}
+      variant="borderless"
     >
       <div className={styles.cardHeader}>
         <div>

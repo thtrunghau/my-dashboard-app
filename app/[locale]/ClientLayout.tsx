@@ -43,24 +43,6 @@ export default function ClientLayout({
       <html lang={currentLanguage} data-theme={theme}>
         <body>
           <Layout style={{ minHeight: "100vh" }}>
-            {/* Header with language and theme toggles */}
-            {/* <Header
-              style={{
-                background: theme === "dark" ? "#1b2431" : "#f5f6fa",
-                borderBottom:
-                  "1px solid " + (theme === "dark" ? "#2d3747" : "#e6e8ef"),
-                color: theme === "dark" ? "#fff" : "#000",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "center",
-                padding: "0 16px",
-              }}
-            >
-              <Space>
-                <LanguageToggle urlLocale={locale} />
-                <ThemeToggle />
-              </Space>
-            </Header> */}
             <Layout>
               <Content style={{ padding: 0 }}>{children}</Content>
             </Layout>
