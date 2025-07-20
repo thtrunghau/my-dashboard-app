@@ -41,7 +41,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
     <Card
       className={`${styles.pricingCard} ${isPremium ? styles.premium : ''} ${className || ""}`}
       style={style}
-      bordered={false}
+      variant="borderless"  
     >
       <div className={styles.cardHeader}>
         <Title level={4} className={styles.cardTitle}>{title}</Title>

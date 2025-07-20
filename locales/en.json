@@ -191,6 +191,20 @@
       "monthlyCharge": "Monthly Charge",
       "getStarted": "Get Started",
       "freeTrialText": "Start Your 30 Day Free Trial"
+    },
+    "todoList": {
+      "title": "Todo List",
+      "empty": "No todos yet. Click 'Add' to create one.",
+      "addTodo": "Add Todo",
+      "editTodo": "Edit Todo",
+      "description": "Description",
+      "priority": "Priority",
+      "highPriority": "High",
+      "mediumPriority": "Medium",
+      "lowPriority": "Low",
+      "dueDate": "Due Date",
+      "titleRequired": "Please enter a title",
+      "priorityRequired": "Please select a priority"
     }
   },
   "themePreview": {

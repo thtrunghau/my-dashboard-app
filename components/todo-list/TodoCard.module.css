@@ -1,0 +1,140 @@
+/* Base card styles */
+.todoCard {
+  background: var(--dashboard-card-bg, #fff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.todoCard:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Selected state */
+.todoCard.selected {
+  border-color: var(--dashboard-primary, #1677ff);
+  box-shadow: 0 6px 16px rgba(22, 119, 255, 0.15);
+}
+
+/* Dark theme */
+.todoCard.dark {
+  background: var(--dashboard-card-bg, #273142);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.todoCard.dark:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.todoCard.dark.selected {
+  border-color: var(--dashboard-primary, #1677ff);
+  box-shadow: 0 6px 16px rgba(22, 119, 255, 0.2);
+}
+
+/* Header with checkbox and title */
+.todoHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.checkbox {
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.todoTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--dashboard-text, #333333);
+}
+
+.todoDescription {
+  font-size: 14px;
+  color: var(--dashboard-text-secondary, rgba(0, 0, 0, 0.65));
+  margin-bottom: 12px;
+}
+
+/* Completed state */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Icon actions */
+.iconActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.starIcon {
+  color: #faad14;
+  font-size: 16px;
+}
+
+.closeIcon {
+  color: #ff4d4f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: #ff4d4f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Priority tag */
+.priorityTag {
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 12px;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+/* Due date */
+.dueDate {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--dashboard-border, rgba(0, 0, 0, 0.06));
+}
+
+.actionButton {
+  margin-left: 8px;
+}
+
+/* Dark theme text colors */
+.dark .todoTitle {
+  color: var(--dashboard-text, #ffffff);
+}
+
+.dark .todoDescription {
+  color: var(--dashboard-text-secondary, rgba(255, 255, 255, 0.65));
+}
+
+.dark .actions {
+  border-top-color: var(--dashboard-border, rgba(255, 255, 255, 0.1));
+}

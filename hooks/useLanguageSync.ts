@@ -142,7 +142,7 @@ export function useLanguageSync(urlLocale: string) {
         setLanguage(newLanguage);
         i18n.changeLanguage(newLanguage);
         setLastUrlLocale(newLanguage);
-
+  
         if (process.env.NODE_ENV === "development") {
           console.log("User-initiated language change:", {
             from: language,
@@ -151,11 +151,9 @@ export function useLanguageSync(urlLocale: string) {
           });
         }
       } finally {
-        // Reset flags after a short delay
-        setTimeout(() => {
-          userInitiatedChange.current = false;
-          syncInProgress.current = false;
-        }, 50);
+        // Reset flags immediately instead of using setTimeout
+        userInitiatedChange.current = false;
+        syncInProgress.current = false;
       }
     }
   };

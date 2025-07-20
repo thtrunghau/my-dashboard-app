@@ -1,0 +1,32 @@
+.addButton {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  padding: 0 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #5b8dff;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(91, 141, 255, 0.2);
+}
+
+.addButton:hover {
+  background: #4c7dff;
+  box-shadow: 0 4px 12px rgba(91, 141, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.addButton:active {
+  background: #3d6eff;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(91, 141, 255, 0.2);
+}
+
+.addButton:focus {
+  box-shadow: 0 0 0 2px rgba(91, 141, 255, 0.2);
+}
