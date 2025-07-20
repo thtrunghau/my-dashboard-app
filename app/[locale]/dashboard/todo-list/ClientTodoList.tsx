@@ -144,7 +144,7 @@ export default function ClientTodoListPage({ locale }: { locale: string }) {
           <Title level={2}>{t("dashboard.todoList.title", "Todo List")}</Title>
         </Col>
         <Col xs={24} sm={12} md={8} style={{ textAlign: "right" }}>
-          <AddButton onClick={handleAddTodo}>Add New Task</AddButton>
+          <AddButton onClick={handleAddTodo}>{t('dashboard.todoList.addNewTask')}</AddButton>
         </Col>
       </Row>
 

@@ -6,7 +6,7 @@ interface TodoListParams {
   locale: string;
 }
 
-export default function ProductsPage({
+export default function TodoListPage({
   params,
 }: {
   params: TodoListParams | Promise<TodoListParams>;

@@ -194,6 +194,7 @@
     },
     "todoList": {
       "title": "Todo List",
+      "addNewTask": "Add New Task",
       "empty": "No todos yet. Click 'Add' to create one.",
       "addTodo": "Add Todo",
       "editTodo": "Edit Todo",
@@ -205,6 +206,39 @@
       "dueDate": "Due Date",
       "titleRequired": "Please enter a title",
       "priorityRequired": "Please select a priority"
+    },
+    "contact": {
+      "title": "Contact",
+      "message": "Message",
+      "addNewContact": "Add New Contact",
+      "form": {
+        "addNewContact": "Add New Contact",
+        "uploadPhoto": "Upload Photo",
+        "upload": "Upload",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "dateOfBirth": "Date of Birth",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "firstNamePlaceholder": "Enter first name",
+        "lastNamePlaceholder": "Enter last name",
+        "emailPlaceholder": "Enter email address",
+        "phonePlaceholder": "Enter phone number",
+        "dobPlaceholder": "Select date",
+        "genderPlaceholder": "Select gender",
+        "firstNameRequired": "Please enter first name",
+        "lastNameRequired": "Please enter last name",
+        "emailRequired": "Please enter email",
+        "emailInvalid": "Please enter a valid email",
+        "phoneRequired": "Please enter phone number",
+        "add": "Add",
+        "imageOnly": "You can only upload image files!",
+        "imageSizeLimit": "Image must be smaller than 2MB!"
+      }
     }
   },
   "themePreview": {

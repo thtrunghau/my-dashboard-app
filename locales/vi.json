@@ -198,6 +198,7 @@
     },
     "todoList": {
       "title": "Danh sách việc cần làm",
+      "addNewTask": "Thêm Việc Mới",
       "empty": "Chưa có việc cần làm. Nhấp 'Thêm' để tạo mới.",
       "addTodo": "Thêm việc cần làm",
       "editTodo": "Chỉnh sửa việc cần làm",
@@ -209,6 +210,39 @@
       "dueDate": "Hạn chót",
       "titleRequired": "Vui lòng nhập tiêu đề",
       "priorityRequired": "Vui lòng chọn độ ưu tiên"
+    },
+    "contact": {
+      "title": "Danh sách liên hệ",
+      "message": "Nhắn tin",
+      "addNewContact": "Thêm liên hệ mới",
+      "form": {
+        "addNewContact": "Thêm liên hệ mới",
+        "uploadPhoto": "Tải ảnh lên",
+        "upload": "Tải lên",
+        "firstName": "Tên",
+        "lastName": "Họ",
+        "email": "Email",
+        "phoneNumber": "Số điện thoại",
+        "dateOfBirth": "Ngày sinh",
+        "gender": "Giới tính",
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "firstNamePlaceholder": "Nhập tên",
+        "lastNamePlaceholder": "Nhập họ",
+        "emailPlaceholder": "Nhập địa chỉ email",
+        "phonePlaceholder": "Nhập số điện thoại",
+        "dobPlaceholder": "Chọn ngày",
+        "genderPlaceholder": "Chọn giới tính",
+        "firstNameRequired": "Vui lòng nhập tên",
+        "lastNameRequired": "Vui lòng nhập họ",
+        "emailRequired": "Vui lòng nhập email",
+        "emailInvalid": "Vui lòng nhập email hợp lệ",
+        "phoneRequired": "Vui lòng nhập số điện thoại",
+        "add": "Thêm",
+        "imageOnly": "Bạn chỉ có thể tải lên tệp hình ảnh!",
+        "imageSizeLimit": "Hình ảnh phải nhỏ hơn 2MB!"
+      }
     }
   },
   "themePreview": {
