@@ -141,13 +141,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLoginSuccess }) => {
             </Button>
           </Form.Item>
         </Form>
-
-        {/* <div className={styles.demoCredentials}>
-          <Text type="secondary" className={styles.demoText}>
-            {t('auth.demoCredentials', 'Demo Credentials:')}
-          </Text>
-          <Text code>admin@dashboard.com / admin123</Text>
-        </div> */}
       </Card>
     </div>
   );

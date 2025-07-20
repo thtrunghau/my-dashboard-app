@@ -113,7 +113,7 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
       label: t("sidebar.calendar", "Calendar"),
       icon: getThemeIconPath("calendar.svg"),
       activeIcon: "/icon-sidebar/icon-active/calendar.svg",
-      href: `/${locale}/dashboard/calender`,
+      href: `/${locale}/dashboard/calendar`,
     },
     {
       id: "todo",
@@ -232,6 +232,7 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
                       className={`${styles.menuLink} ${
                         active ? styles.active : ""
                       }`}
+                      prefetch={true}
                     >
                       <div className={styles.iconContainer}>
                         <Image
