@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
 import { Tooltip } from "antd";
 import styles from "./SideBar.module.css";
 import Image from "next/image";
 import LogoutConfirmModal from "./LogoutConfirmModal";
+import { useAuthStore } from '@/stores/authStore';
 
 export type SideBarProps = {
   locale: string;
@@ -29,6 +30,9 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
   const pathname = usePathname();
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false);
 
+  // Add this inside the component
+  const { logout } = useAuthStore();
+  const router = useRouter();
   // Get theme-based icon path
   const getThemeIconPath = (iconName: string) => {
     const themeFolder =
@@ -171,11 +175,15 @@ const SideBar: React.FC<SideBarProps> = ({ locale }) => {
     setIsLogoutModalVisible(true);
   };
 
+  // Update the handleLogoutConfirm function
+
+  
+  
+  
   const handleLogoutConfirm = () => {
     setIsLogoutModalVisible(false);
-    // Add your logout logic here
-    console.log("User logged out");
-    // For example: router.push(`/${locale}/auth/login`);
+    logout(); // Clear auth state
+    router.push(`/${locale}/auth/login`);
   };
 
   const handleLogoutCancel = () => {

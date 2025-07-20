@@ -5,6 +5,8 @@ import { SideBar } from "@/components/common/sidebar";
 import { useThemeStore } from "@/stores/themeStore";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
 import { NavBar } from "@/components/common/navbar";
+// Add this import
+import { useAuthGuard } from "@/hooks/useAuthGuard";
 
 const { Content, Sider } = Layout;
 
@@ -15,9 +17,30 @@ export default function ClientDashboardLayout({
   children: React.ReactNode;
   locale: string;
 }) {
-  // Use custom hook for language synchronization
+  // Add auth guard
+  const { isAuthenticated, isLoading } = useAuthGuard(locale);
   const { isHydrated } = useLanguageSync(locale);
   const { theme } = useThemeStore();
+
+  // Show loading during auth check
+  if (isLoading || !isHydrated || !isAuthenticated) {
+    return (
+      <Layout style={{ minHeight: "100vh" }}>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '100vh' 
+        }}>
+          Loading...
+        </div>
+      </Layout>
+    );
+  }
+
+  // Use custom hook for language synchronization
+  // const { isHydrated } = useLanguageSync(locale);
+  // const { theme } = useThemeStore();
 
   // Show fallback content during hydration to prevent mismatch
   if (!isHydrated) {
