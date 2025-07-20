@@ -107,6 +107,9 @@
   transition: all 0.3s ease;
 }
 
+.light .printButton svg {
+  color: black;
+}
 .printButton:hover {
   background-color: var(--dashboard-border);
 }
