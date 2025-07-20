@@ -239,6 +239,35 @@
         "imageOnly": "You can only upload image files!",
         "imageSizeLimit": "Image must be smaller than 2MB!"
       }
+    },
+    "team":{
+      "title": "Team",
+      "addNewMember": "Add New Member",
+      "form": {
+        "uploadPhoto": "Upload Photo",
+        "upload": "Upload",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "position": "Position",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "firstNamePlaceholder": "Enter first name",
+        "lastNamePlaceholder": "Enter last name",
+        "emailPlaceholder": "Enter email address",
+        "positionPlaceholder": "Enter position",
+        "genderPlaceholder": "Select gender",
+        "firstNameRequired": "Please enter first name",
+        "lastNameRequired": "Please enter last name",
+        "emailRequired": "Please enter email",
+        "emailInvalid": "Please enter a valid email",
+        "positionRequired": "Please enter position",
+        "add": "Add",
+        "imageOnly": "You can only upload image files!",
+        "imageSizeLimit": "Image must be smaller than 2MB!"
+      }
     }
   },
   "themePreview": {

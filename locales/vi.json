@@ -243,6 +243,35 @@
         "imageOnly": "Bạn chỉ có thể tải lên tệp hình ảnh!",
         "imageSizeLimit": "Hình ảnh phải nhỏ hơn 2MB!"
       }
+    },
+    "team":{
+      "title": "Nhóm",
+      "addNewMember": "Thêm thành viên mới",
+      "form": {
+        "uploadPhoto": "Tải ảnh lên",
+        "upload": "Tải lên",
+        "firstName": "Tên",
+        "lastName": "Họ",
+        "email": "Email",
+        "position": "Vị trí",
+        "gender": "Giới tính",
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "firstNamePlaceholder": "Nhập tên",
+        "lastNamePlaceholder": "Nhập họ",
+        "emailPlaceholder": "Nhập địa chỉ email",
+        "positionPlaceholder": "Nhập vị trí",
+        "genderPlaceholder": "Chọn giới tính",
+        "firstNameRequired": "Vui lòng nhập tên",
+        "lastNameRequired": "Vui lòng nhập họ",
+        "emailRequired": "Vui lòng nhập email",
+        "emailInvalid": "Vui lòng nhập email hợp lệ",
+        "positionRequired": "Vui lòng nhập vị trí",
+        "add": "Thêm",
+        "imageOnly": "Bạn chỉ có thể tải lên tệp hình ảnh!",
+        "imageSizeLimit": "Hình ảnh phải nhỏ hơn 2MB!"
+      }
     }
   },
   "themePreview": {

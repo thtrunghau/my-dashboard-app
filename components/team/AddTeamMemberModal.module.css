@@ -1,0 +1,204 @@
+/* Base Modal Styles */
+.teamModal {
+  --modal-bg: #ffffff;
+  --modal-border: #e6e8ef;
+  --text-primary: #202224;
+  --text-secondary: #718ebf;
+  --primary-color: #4880ff;
+  --primary-hover: #3a6cd5;
+  --cancel-bg: #f5f7fa;
+  --cancel-hover: #e6e8ef;
+  --cancel-border: #e6e8ef;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --upload-bg: #f5f7fa;
+  --upload-border: #e6e8ef;
+  --upload-text: #718ebf;
+}
+
+.teamModal.dark {
+  --modal-bg: #1f2937;
+  --modal-border: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --primary-color: #4880ff;
+  --primary-hover: #3a6cd5;
+  --cancel-bg: #374151;
+  --cancel-hover: #4b5563;
+  --cancel-border: #4b5563;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --upload-bg: #374151;
+  --upload-border: #4b5563;
+  --upload-text: #d1d5db;
+}
+
+/* Form Content */
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Upload Section */
+.uploadSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.uploadItem {
+  margin-bottom: 0;
+}
+
+.uploadButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+  background-color: var(--upload-bg);
+  border: 1px dashed var(--upload-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.uploadButton:hover {
+  border-color: var(--primary-color);
+}
+
+.uploadText {
+  margin-top: 8px;
+  color: var(--upload-text);
+}
+
+.uploadLabel {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Info Section */
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.formItem {
+  flex: 1;
+  min-width: 200px;
+}
+
+.formItem :global(.ant-form-item-label) > label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Footer */
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--modal-border);
+}
+
+.cancelButton {
+  background: var(--cancel-bg);
+  border: 1px solid var(--cancel-border);
+  color: var(--text-primary);
+}
+
+.cancelButton:hover {
+  background: var(--cancel-hover);
+  border-color: var(--cancel-border);
+}
+
+.submitButton {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.submitButton:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Modal Override Styles */
+.teamModal :global(.ant-modal-content) {
+  background: var(--modal-bg);
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px var(--shadow-color),
+    0 10px 10px -5px var(--shadow-color);
+  overflow: hidden;
+  padding: 0;
+}
+
+.teamModal :global(.ant-modal-header) {
+  background: var(--modal-bg);
+  border-bottom: 1px solid var(--modal-border);
+  padding: 16px 24px;
+  margin-bottom: 0;
+}
+
+.teamModal :global(.ant-modal-title) {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.teamModal :global(.ant-modal-body) {
+  padding: 24px;
+}
+
+.teamModal :global(.ant-modal-close) {
+  color: var(--text-secondary);
+}
+
+.teamModal :global(.ant-modal-close:hover) {
+  color: var(--text-primary);
+}
+
+/* Form field styles */
+.teamModal :global(.ant-input),
+.teamModal :global(.ant-select-selector),
+.teamModal :global(.ant-picker) {
+  border-radius: 8px;
+  border-color: var(--modal-border);
+  background-color: var(--modal-bg);
+  color: var(--text-primary);
+}
+
+.teamModal :global(.ant-input:hover),
+.teamModal :global(.ant-select-selector:hover),
+.teamModal :global(.ant-picker:hover) {
+  border-color: var(--primary-color);
+}
+
+.teamModal :global(.ant-input:focus),
+.teamModal :global(.ant-select-selector:focus),
+.teamModal :global(.ant-picker-focused) {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(72, 128, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .formItem {
+    min-width: 100%;
+  }
+}
