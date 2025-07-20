@@ -1,0 +1,145 @@
+/* Invoice Container */
+.invoiceContainer {
+  background: var(--dashboard-card-bg);
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid var(--dashboard-border);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Detail Section */
+.detailSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding: 0 80px;
+}
+
+.detailColumn {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.detailTitle {
+  font-weight: 600;
+  color: var(--dashboard-text);
+  margin-bottom: 12px;
+}
+
+.detailInfo {
+  color: var(--dashboard-text);
+  margin-bottom: 4px;
+}
+
+.detailAddress {
+  color: var(--dashboard-text);
+  font-size: 14px;
+}
+
+.dateInfo {
+  text-align: right;
+}
+
+/* Table Styles */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+.invoiceTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoiceTable th {
+  background-color: var(--dashboard-card-bg);
+  color: var(--dashboard-text);
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--dashboard-border);
+}
+
+.invoiceTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--dashboard-border);
+  color: var(--dashboard-text);
+}
+
+.invoiceTable tr:last-child td {
+  border-bottom: none;
+}
+
+.totalRow {
+  font-weight: 600;
+}
+
+/* Action Section */
+.actionSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.printButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--dashboard-card-bg);
+  border: 1px solid var(--dashboard-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.printButton:hover {
+  background-color: var(--dashboard-border);
+}
+
+.sendButton {
+  background-color: var(--dashboard-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 24px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sendButton:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detailSection {
+    flex-direction: column;
+  }
+
+  .dateInfo {
+    text-align: left;
+  }
+
+  .invoiceContainer {
+    padding: 20px;
+  }
+}

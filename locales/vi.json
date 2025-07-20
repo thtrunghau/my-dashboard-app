@@ -293,6 +293,24 @@
         "seoDescriptionRequired": "Vui lòng nhập mô tả SEO",
         "seoKeywordsRequired": "Vui lòng nhập từ khóa SEO"
       }
+    },
+    "invoice":{
+      "title": "Hóa đơn",
+      "from": "Người gửi :",
+      "to": "Người nhận :",
+      "invoiceDate": "Ngày lập hóa đơn :",
+      "dueDate": "Ngày đáo hạn :",
+      "serialNo": "Số thứ tự",
+      "description": "Mô tả",
+      "quantity": "Số lượng",
+      "baseCost": "Đơn giá",
+      "totalCost": "Thành tiền",
+      "total": "Tổng cộng",
+      "send": "Gửi",
+      "sendSuccess": "Gửi hóa đơn thành công"
+    },
+    "uiElements": {
+      "title": "UI Elements"
     }
   },
   "themePreview": {

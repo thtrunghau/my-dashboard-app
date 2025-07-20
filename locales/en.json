@@ -289,6 +289,24 @@
         "seoDescriptionRequired": "Please enter SEO description",
         "seoKeywordsRequired": "Please enter SEO keywords"
       }
+    },
+    "invoice": {
+      "title": "Invoice",
+      "from": "Invoice From :",
+      "to": "Invoice To :",
+      "invoiceDate": "Invoice Date :",
+      "dueDate": "Due Date :",
+      "serialNo": "Serial No.",
+      "description": "Description",
+      "quantity": "Quantity",
+      "baseCost": "Base Cost",
+      "totalCost": "Total Cost",
+      "total": "Total",
+      "send": "Send",
+      "sendSuccess": "Invoice sent successfully"
+    },
+    "uiElements": {
+      "title": "UI Elements"
     }
   },
   "themePreview": {
