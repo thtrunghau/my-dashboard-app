@@ -1,0 +1,98 @@
+/* Chart Container */
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Chart Selector */
+.chartSelector {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radioButton {
+  border-radius: 6px !important;
+  border-color: var(--dashboard-border, #e6e8ef) !important;
+  color: var(--dashboard-text, #333333) !important;
+  background: var(--dashboard-card-bg, #ffffff) !important;
+  transition: all 0.3s ease;
+}
+
+.radioButton:hover {
+  border-color: var(--dashboard-primary, #1677ff) !important;
+  color: var(--dashboard-primary, #1677ff) !important;
+}
+
+.radioButton.ant-radio-button-wrapper-checked {
+  background: var(--dashboard-primary, #1677ff) !important;
+  border-color: var(--dashboard-primary, #1677ff) !important;
+  color: #ffffff !important;
+}
+
+.dark .radioButton {
+  border-color: var(--dashboard-border, #2d3747) !important;
+  color: var(--dashboard-text, #ffffff) !important;
+  background: var(--dashboard-card-bg, #273142) !important;
+}
+
+.dark .radioButton:hover {
+  border-color: var(--dashboard-primary, #1677ff) !important;
+  color: var(--dashboard-primary, #1677ff) !important;
+}
+
+/* Image Container */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 100%;
+  background: var(--dashboard-card-bg, #ffffff);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--dashboard-border, #e6e8ef);
+}
+
+.dark .imageContainer {
+  background: var(--dashboard-card-bg, #273142);
+  border-color: var(--dashboard-border, #2d3747);
+}
+
+.chartImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chartContainer {
+    padding: 16px;
+  }
+  
+  .radioGroup {
+    gap: 4px;
+  }
+  
+  .radioButton {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .imageContainer {
+    min-height: 250px;
+    padding: 16px;
+  }
+}

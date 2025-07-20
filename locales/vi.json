@@ -294,7 +294,7 @@
         "seoKeywordsRequired": "Vui lòng nhập từ khóa SEO"
       }
     },
-    "invoice":{
+    "invoice": {
       "title": "Hóa đơn",
       "from": "Người gửi :",
       "to": "Người nhận :",
@@ -310,7 +310,54 @@
       "sendSuccess": "Gửi hóa đơn thành công"
     },
     "uiElements": {
-      "title": "UI Elements"
+      "title": "Thành phần UI",
+      "filter": {
+        "title": "Bộ lọc",
+        "filterBy": "Lọc theo",
+        "charts": "Biểu đồ",
+        "barCharts": "Biểu đồ cột",
+        "pieCharts": "Biểu đồ tròn",
+        "donutCharts": "Biểu đồ donut",
+        "all": "Tất cả",
+        "today": "Hôm nay",
+        "weekly": "Hàng tuần",
+        "monthly": "Hàng tháng"
+      },
+      "barChart": {
+        "title": "Biểu đồ cột",
+        "chart1": "Biểu đồ 1",
+        "chart2": "Biểu đồ 2",
+        "chart3": "Biểu đồ 3",
+        "chart4": "Biểu đồ 4",
+        "sales": "Doanh số",
+        "revenue": "Doanh thu"
+      },
+      "pieChart": {
+        "title": "Biểu đồ tròn",
+        "chart1": "Biểu đồ 1",
+        "chart2": "Biểu đồ 2",
+        "chart3": "Biểu đồ 3",
+        "chart4": "Biểu đồ 4",
+        "categories": {
+          "electronics": "Điện tử",
+          "clothing": "Quần áo",
+          "furniture": "Nội thất",
+          "others": "Khác"
+        }
+      },
+      "donutChart": {
+        "title": "Biểu đồ donut",
+        "chart1": "Biểu đồ 1",
+        "chart2": "Biểu đồ 2",
+        "chart3": "Biểu đồ 3",
+        "chart4": "Biểu đồ 4",
+        "categories": {
+          "completed": "Hoàn thành",
+          "inProgress": "Đang thực hiện",
+          "pending": "Đang chờ",
+          "cancelled": "Đã hủy"
+        }
+      }
     }
   },
   "themePreview": {

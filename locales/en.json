@@ -306,7 +306,54 @@
       "sendSuccess": "Invoice sent successfully"
     },
     "uiElements": {
-      "title": "UI Elements"
+      "title": "UI Elements",
+      "filter": {
+        "title": "Filter",
+        "filterBy": "Filter By",
+        "charts": "Charts",
+        "barCharts": "Bar Charts",
+        "pieCharts": "Pie Charts",
+        "donutCharts": "Donut Charts",
+        "all": "All",
+        "today": "Today",
+        "weekly": "Weekly",
+        "monthly": "Monthly"
+      },
+      "barChart": {
+        "title": "Bar Chart",
+        "chart1": "Chart 1",
+        "chart2": "Chart 2",
+        "chart3": "Chart 3",
+        "chart4": "Chart 4",
+        "sales": "Sales",
+        "revenue": "Revenue"
+      },
+      "pieChart": {
+        "title": "Pie Chart",
+        "chart1": "Chart 1",
+        "chart2": "Chart 2",
+        "chart3": "Chart 3",
+        "chart4": "Chart 4",
+        "categories": {
+          "electronics": "Electronics",
+          "clothing": "Clothing",
+          "furniture": "Furniture",
+          "others": "Others"
+        }
+      },
+      "donutChart": {
+        "title": "Donut Chart",
+        "chart1": "Chart 1",
+        "chart2": "Chart 2",
+        "chart3": "Chart 3",
+        "chart4": "Chart 4",
+        "categories": {
+          "completed": "Completed",
+          "inProgress": "In Progress",
+          "pending": "Pending",
+          "cancelled": "Cancelled"
+        }
+      }
     }
   },
   "themePreview": {
