@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "antd";
-import { useThemeStore } from "@/stores/themeStore";
+// import { useThemeStore } from "@/stores/themeStore";
 import { useTranslation } from "react-i18next";
 import { useLanguageSync } from "@/hooks/useLanguageSync";
 

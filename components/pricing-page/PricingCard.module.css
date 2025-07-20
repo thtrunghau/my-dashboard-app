@@ -1,0 +1,177 @@
+/* Base Card Styles */
+.pricingCard {
+  background: var(--dashboard-card-bg, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--dashboard-border, #e6e8ef);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Premium card styling */
+.premium {
+  border-color: rgba(72, 128, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(72, 128, 255, 0.15);
+}
+
+/* Card Header */
+.cardHeader {
+  padding: 24px;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 24px;
+  color: var(--dashboard-text, #333333);
+  margin-bottom: 8px !important;
+  font-weight: 600;
+}
+
+.periodText {
+  font-size: 14px;
+  color: var(--dashboard-text-secondary, #718ebf);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.currencySymbol {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4880ff;
+  margin-right: 4px;
+}
+
+.priceAmount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4880ff;
+  line-height: 1;
+}
+
+.pricePeriod {
+  font-size: 16px;
+  color: var(--dashboard-text-secondary, #718ebf);
+  margin-left: 4px;
+}
+
+/* Divider */
+.divider {
+  margin: 0;
+  border-color: var(--dashboard-border, #e6e8ef);
+}
+
+/* Service Section */
+.serviceSection {
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.serviceList {
+  width: 100%;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.serviceName {
+  font-size: 14px;
+  color: var(--dashboard-text, #333333);
+  text-align: center;
+}
+
+.disabledText {
+  color: var(--dashboard-text-secondary, #718ebf);
+  text-decoration: line-through;
+}
+
+/* Action Section */
+.actionSection {
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getStartedButton {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.premiumButton {
+  background-color: #4880ff;
+  border-color: #4880ff;
+}
+
+.premiumButton:hover {
+  background-color: #3a6ad9;
+  border-color: #3a6ad9;
+}
+
+.trialText {
+  font-size: 14px;
+  color: #282828;
+  display: block;
+  text-decoration: underline;
+}
+
+/* Dark theme adjustments using data-theme attribute */
+html[data-theme="dark"] .trialText {
+  color: var(--dashboard-text-secondary, #718ebf);
+}
+
+/* Dark theme adjustments using data-theme attribute */
+html[data-theme="dark"] .pricingCard {
+  background: var(--dashboard-card-bg, #242e3c);
+  border-color: var(--dashboard-border, #2d3747);
+}
+
+html[data-theme="dark"] .cardTitle,
+html[data-theme="dark"] .serviceName {
+  color: var(--dashboard-text, #ffffff);
+}
+
+html[data-theme="dark"] .periodText,
+html[data-theme="dark"] .pricePeriod,
+html[data-theme="dark"] .trialText,
+html[data-theme="dark"] .disabledText {
+  color: var(--dashboard-text-secondary, #a0aec0);
+}
+
+html[data-theme="dark"] .divider {
+  border-color: var(--dashboard-border, #2d3747);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .cardHeader {
+    padding: 20px;
+  }
+
+  .serviceSection,
+  .actionSection {
+    padding: 20px;
+  }
+
+  .priceAmount {
+    font-size: 30px;
+  }
+}

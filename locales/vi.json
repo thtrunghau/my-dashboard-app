@@ -190,6 +190,12 @@
         "showing": "Hiển thị {{start}}-{{end}} của {{total}}"
       }
     },
+    "pricing": {
+      "title": "Bảng giá",
+      "monthlyCharge": "Phí hàng tháng",
+      "getStarted": "Bắt đầu",
+      "freeTrialText": "Bắt đầu dùng thử miễn phí 30 ngày"
+    },
     "themePreview": {
       "title": "Xem Trước Giao Diện",
       "currentTheme": "Giao Diện Hiện Tại",

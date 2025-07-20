@@ -22,7 +22,7 @@ export default function ClientInStockProductsPage({
   const [filteredData, setFilteredData] = useState<ProductStockData[]>([]);
 
   // Mock data
-  const mockData: ProductStockData[] = [
+  const mockData = React.useMemo<ProductStockData[]>(() => [
     {
       key: "1",
       id: "1",
@@ -111,12 +111,12 @@ export default function ClientInStockProductsPage({
       piece: 73,
       availableColors: ["#000000", "#FFFFFF", "#FF0000"],
     },
-  ];
+  ], []);
 
   // Initialize filtered data with mock data
   useEffect(() => {
     setFilteredData(mockData);
-  }, []);
+  }, [mockData]);
 
   // Show fallback content during hydration to prevent mismatch
   if (!isHydrated) {
@@ -157,7 +157,7 @@ export default function ClientInStockProductsPage({
     <div>
       <Row justify="space-between" align="middle" style={{ marginBottom: 24 }}>
         <Col xs={24} sm={12} md={16}>
-          <Title level={4}>
+          <Title level={2}>
             {t("dashboard.stockedProducts.title", "Product Stock")}
           </Title>
         </Col>

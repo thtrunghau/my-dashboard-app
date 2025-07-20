@@ -13,11 +13,11 @@ interface ThemePreviewParams {
 export default function ThemePreviewPage({
   params,
 }: {
-  params: ThemePreviewParams | Promise<ThemePreviewParams>;
+  params: Promise<ThemePreviewParams>;
 }) {
   // Properly unwrap params using React.use()
   // In current Next.js this is unnecessary but prepares for future versions
-  const unwrappedParams = use(params as Promise<ThemePreviewParams>);
+  const unwrappedParams = use(params);
   const locale = unwrappedParams.locale || "en";
 
   // Pass the unwrapped locale to the client component

@@ -101,7 +101,7 @@ export default function ClientMainDashboardPage({
   ];
   return (
     <div>
-      <Title level={4}>{t("dashboard.dashboard.title")}</Title>
+      <Title level={2}>{t("dashboard.dashboard.title")}</Title>
 
       {/* Total Statistics Section */}
       <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>

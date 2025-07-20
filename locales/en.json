@@ -185,6 +185,12 @@
         "action": "Action",
         "showing": "Showing {{start}}-{{end}} of {{total}}"
       }
+    },
+    "pricing": {
+      "title": "Pricing",
+      "monthlyCharge": "Monthly Charge",
+      "getStarted": "Get Started",
+      "freeTrialText": "Start Your 30 Day Free Trial"
     }
   },
   "themePreview": {

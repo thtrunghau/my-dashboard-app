@@ -128,7 +128,7 @@ export default function ClientProductsPage({ locale }: { locale: string }) {
 
   return (
     <div>
-      <Title level={4}>{t("dashboard.products.title", "Products")}</Title>
+      <Title level={2}>{t("dashboard.products.title", "Products")}</Title>
 
       <Carousel />
 
