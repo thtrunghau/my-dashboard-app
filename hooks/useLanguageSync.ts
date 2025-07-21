@@ -84,7 +84,6 @@ export function useLanguageSync(urlLocale: string) {
     }
   }, [urlLocale, language, setLanguage, lastUrlLocale, isHydrated]);
 
-  // Store → URL: When language store changes (for non-user-initiated changes)
   // useEffect(() => {
   //   if (
   //     !isInitialMount.current &&

@@ -3,8 +3,8 @@ html[data-theme="dark"] .chartContainer {
   --revenue-chart-border: #2d3747;
   --revenue-chart-text-primary: #ffffff;
   --revenue-chart-text-secondary: #e0e0e0;
-  --revenue-chart-line-revenue: #4880FF;
-  --revenue-chart-line-profit: #00C48C;
+  --revenue-chart-line-revenue: #4880ff;
+  --revenue-chart-line-profit: #00c48c;
   --revenue-chart-grid: rgba(255, 255, 255, 0.15);
 }
 

@@ -1,32 +1,3 @@
-/* CSS Custom Properties for Theme Support */
-/* :root { */
-  /* Light Theme Colors */
-  /* --stat-card-bg: #ffffff;
-  --stat-card-border: transparent;
-  --stat-card-shadow: rgba(0, 0, 0, 0.05);
-  --stat-card-title: #666666;
-  --stat-card-value: #333333;
-  --stat-card-trend-up: #4caf50;
-  --stat-card-trend-down: #f44336;
-  --stat-card-trend-period: #999999;
-  --stat-card-icon-bg: rgba(72, 128, 255, 0.1);
-  --stat-card-icon-color: #4880ff; */
-/* } */
-
-/* Dark Theme Colors */
-/* .dark { */
-  /* --stat-card-bg: #273142;
-  --stat-card-border: #2d3747;
-  --stat-card-shadow: rgba(0, 0, 0, 0.2);
-  --stat-card-title: #b8c5d1;
-  --stat-card-value: #ffffff;
-  --stat-card-trend-up: #4caf50;
-  --stat-card-trend-down: #f44336;
-  --stat-card-trend-period: #8a97a9;
-  --stat-card-icon-bg: rgba(72, 128, 255, 0.2);
-  --stat-card-icon-color: #4880ff; */
-/* } */
-
 /* Base Card Styles */
 .statCard {
   background: var(--stat-card-bg);
@@ -118,7 +89,7 @@
     align-items: flex-start;
     gap: 16px;
   }
-  
+
   .iconContainer {
     margin-bottom: 8px;
   }

@@ -1,34 +1,3 @@
-/* CSS Custom Properties for Theme Support */
-/* :root { */
-  /* Light Theme Colors */
-  /* --deals-detail-bg: #ffffff;
-  --deals-detail-border: #f0f0f0;
-  --deals-detail-text-primary: #2c3e50;
-  --deals-detail-text-secondary: #718EBF;
-  --deals-detail-button-bg: #f9fafb;
-  --deals-detail-button-border: #e6e8eb;
-  --deals-detail-button-text: #718EBF;
-  --deals-detail-table-header-bg: #f9fafb;
-  --deals-detail-table-header-text: #2c3e50;
-  --deals-detail-table-row-hover: #f5f8ff;
-  --deals-detail-table-border: #f0f0f0; */
-/* } */
-
-/* Dark Theme Colors */
-/* html[data-theme="dark"] .dealsDetailCard { */
-  /* --deals-detail-bg: #273142;
-  --deals-detail-border: #2d3747;
-  --deals-detail-text-primary: #e9ecef;
-  --deals-detail-text-secondary: #A3AED0;
-  --deals-detail-button-bg: #1B2559;
-  --deals-detail-button-border: #2d3747;
-  --deals-detail-button-text: #A3AED0;
-  --deals-detail-table-header-bg: #1B2559;
-  --deals-detail-table-header-text: #e9ecef;
-  --deals-detail-table-row-hover: #242e3c;
-  --deals-detail-table-border: #2d3747; */
-/* } */
-
 .dealsDetailCard {
   background-color: var(--deals-detail-bg);
   border: 1px solid var(--deals-detail-border);
@@ -126,7 +95,7 @@
     gap: 16px;
     align-items: flex-start;
   }
-  
+
   .customerInfo {
     flex-direction: column;
     align-items: flex-start;
