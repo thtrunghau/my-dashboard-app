@@ -1,6 +1,6 @@
 import React from "react";
 import { Select } from "antd";
-import { FilterOutlined, DownOutlined } from "@ant-design/icons";
+import { FilterOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { useThemeStore } from "@/stores/themeStore";
 import styles from "./Filter.module.css";

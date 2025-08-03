@@ -1,0 +1,133 @@
+# Dashboard UI Refactoring Plan
+
+## Server and Client Components
+
+### Current Implementation:
+- You've properly split server and client components following Next.js App Router patterns.
+- Each page has a server component wrapper (e.g., `page.tsx`) that passes locale data to client components.
+- You're using React.use() to properly unwrap params from promises.
+
+### Recommendations:
+1. **Further Optimize Server/Client Split:**
+   - Consider moving more static UI rendering to server components where possible.
+   - Keep authentication and data fetching logic in server components where appropriate.
+   - Reserve client components for interactive UI elements that require event handlers.
+
+2. **Data Fetching Strategy:**
+   - Implement proper server-side data fetching in server components using `fetch` with appropriate caching.
+   - Consider using React Server Components for data-heavy sections to reduce client-side JavaScript.
+   - Add suspense boundaries around areas that depend on async data.
+
+3. **Code Organization:**
+   - Consider creating a `lib` or `server` directory for server-only utilities to better separate concerns.
+   - Use the "use server" and "use client" directives more strategically to optimize code splitting.
+
+## Theme Configuration and Localization
+
+### Current Implementation:
+- Using Zustand with persist middleware for theme and language state management.
+- Using i18next/react-i18next for internationalization.
+- Locale is managed both in URL and in client-side state.
+- Custom hooks (useLanguageSync) to synchronize URL locale with app state.
+
+### Recommendations:
+1. **Next.js Internationalization:**
+   - Consider migrating to Next.js built-in i18n router support instead of manually handling locale in URL segments.
+   - Use Next.js Internationalized Routing with the `i18n` config in `next.config.ts`.
+   - This would simplify route handling and provide better SEO benefits.
+
+2. **Alternatives to i18next:**
+   - While i18next is a solid choice, consider more Next.js-native solutions like:
+     - `next-intl`: Designed specifically for Next.js with App Router support
+     - `next-i18next`: A lighter wrapper around i18next for Next.js
+   - For smaller projects, you could even use React's Context API with built-in Next.js i18n.
+
+3. **Locale Data Loading:**
+   - Consider server-side loading of locale data for initial render to avoid client-side loading flash.
+   - Implement proper locale detection based on user preferences.
+   - Add support for locale data code splitting to load only needed translations.
+
+4. **Theme Handling:**
+   - Add system theme detection in addition to manual toggling.
+   - Consider using CSS variables more extensively for theming.
+   - Implement theme changes without page reload to improve user experience.
+
+## Ant Design Usage
+
+### Current Implementation:
+- Correctly importing and using Ant Design components.
+- Using CSS modules to style and override Ant Design components.
+- Proper use of global selectors with CSS Modules (`:global()` syntax).
+- Good theme integration between your custom theme system and Ant Design.
+
+### Recommendations:
+1. **Ant Design Theme Configuration:**
+   - Instead of manually styling components, consider using Ant Design's `ConfigProvider` with a theme object to customize components globally.
+   - This would reduce the need for CSS overrides and ensure consistency.
+   - Example:
+     ```tsx
+     import { ConfigProvider } from 'antd';
+     
+     <ConfigProvider
+       theme={{
+         token: {
+           colorPrimary: 'var(--dashboard-primary)',
+         },
+       }}
+     >
+       {children}
+     </ConfigProvider>
+     ```
+
+2. **Component Composition:**
+   - Create reusable composed components for frequently used Ant Design patterns.
+   - This avoids repetition and ensures consistent styling and behavior.
+
+3. **Form Handling:**
+   - Use Ant Design Form hooks more extensively for form validation and submission.
+   - Consider using the Form.useForm() hook pattern for more complex forms.
+
+4. **Up-to-Date API Usage:**
+   - Ensure all components use the latest Ant Design API (v5.26.5).
+   - You've already updated the `popupClassName` to `classNames.popup.root` which is good.
+   - Check for other deprecated APIs and update them.
+
+5. **Performance Optimization:**
+   - Import Ant Design components individually rather than the whole library.
+   - Consider lazy loading for modals, drawers, and other larger components.
+
+## Additional Recommendations
+
+1. **State Management:**
+   - Continue using Zustand for global state, but consider more granular stores.
+   - Implement proper state hydration strategies to avoid hydration mismatches.
+
+2. **Error Handling:**
+   - Add global error boundaries to catch and display errors gracefully.
+   - Implement proper error states for async operations.
+
+3. **Accessibility:**
+   - Enhance accessibility with proper ARIA attributes and keyboard navigation.
+   - Test with screen readers and ensure all interactive elements are accessible.
+
+4. **Performance:**
+   - Implement proper code splitting for routes and components.
+   - Consider using React.memo() for expensive components.
+   - Add Suspense boundaries to improve loading experience.
+
+5. **Testing:**
+   - Add unit tests for components and utilities.
+   - Consider adding E2E tests with Cypress or Playwright.
+
+6. **Documentation:**
+   - Add comments to complex logic sections.
+   - Create documentation for custom hooks and utilities.
+   - Consider using JSDoc for better IDE integration.
+
+## Priority Action Items
+
+1. Migrate to Next.js built-in i18n system or next-intl for better integration.
+2. Implement Ant Design's ConfigProvider for global theme customization.
+3. Optimize server/client component split for better performance.
+4. Add proper data fetching in server components with caching.
+5. Enhance accessibility across all components.

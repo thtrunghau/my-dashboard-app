@@ -64,25 +64,25 @@
 /* Remove all arrow-related styles since we're not using custom arrow anymore */
 
 /* Dark theme dropdown styles */
-:global(.dark-dropdown) {
-  background-color: var(--dashboard-card-bg, #1f2937) !important;
-  border-color: var(--dashboard-border, #374151) !important;
+.filterSelect :global(.dark-dropdown) {
+  background-color: var(--dashboard-card-bg, #273142) !important;
+  border-color: var(--dashboard-border, #2d3747) !important;
 }
 
-:global(.dark-dropdown .ant-select-item) {
-  color: var(--dashboard-text, #f9fafb) !important;
+.filterSelect :global(.dark-dropdown .ant-select-item) {
+  color: var(--dashboard-text, #ffffff) !important;
 }
 
-:global(.dark-dropdown .ant-select-item:hover) {
-  background-color: var(--dashboard-border, #374151) !important;
+.filterSelect :global(.dark-dropdown .ant-select-item:hover) {
+  background-color: var(--dashboard-border, #2d3747) !important;
 }
 
-:global(.dark-dropdown .ant-select-item-option-selected) {
+.filterSelect :global(.dark-dropdown .ant-select-item-option-selected) {
   background-color: var(--dashboard-primary, #3b82f6) !important;
   color: #ffffff !important;
 }
 
 /* Light theme dropdown styles */
-:global(.ant-select-dropdown .ant-select-item) {
+.filterSelect :global(.ant-select-dropdown .ant-select-item) {
   padding: 8px 12px !important;
 }
